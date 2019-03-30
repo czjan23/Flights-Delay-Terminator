@@ -1,0 +1,6 @@
+.root {
+    display: inline-block;
+    margin-top: 100px;
+    width: 100%;
+    max-width: 360px;
+}
