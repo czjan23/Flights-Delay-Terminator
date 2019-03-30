@@ -1,23 +1,23 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import './AutoCompletePanel.css';
+import { withStyles } from '@material-ui/core/styles';
+import { fade } from '@material-ui/core/styles/colorManipulator';
 
-const BASE = [
-  'Waco, TX (ACT)',
-  'Wainwright, AK (AIN)',
-  'Wales, AK (WAA)',
-  'Walla Walla, WA (ALW)',
-  'Washington DC - All airports (WAS)',
-  'Washington DC - Dulles (IAD)',
-  'Washington DC - National (DCA)',
-  'Waterfall, AK (KWF)',
-  'Waterloo, IA (ALO)',
-  'Watertown, NY (ART)',
-  'Houston, TX - Intercontinental (IAH)',
-  'Spartanburg/Greenville, SC (GSP)'
-];
+
+const styles = theme => ({
+  root: {
+    width: '288px',
+    display: 'inline-block',
+    marginLeft: '40px',
+  },
+  listArea: {
+    maxHeight: '250px',
+    overflow: 'auto',
+  },
+});
 
 class AutoCompeletePanel extends React.Component {
   constructor(props) {
@@ -29,7 +29,12 @@ class AutoCompeletePanel extends React.Component {
   }
 
   componentWillMount() {
-    this.setState({base: BASE});
+    let url = 'http://localhost:3001/cities';
+    fetch(url)
+      .then(res => res.json())
+      .then(res => {
+        this.setState({base: res});
+      });
   }
 
   componentWillReceiveProps(nextProps) {
@@ -58,14 +63,16 @@ class AutoCompeletePanel extends React.Component {
   }
 
   render() {
+    const { classes } = this.props;
+
     let list = [];
     this.state.suggestions.forEach((suggestion, index) => {
       list.push(<ListItem onClick={this.handleChoose.bind(this)} key={index} button><ListItemText primary={suggestion} /></ListItem>);
     })
 
     return (
-      <div className="root">
-        <List component="nav">
+      <div className={classes.root}>
+        <List className={classes.listArea}>
           {list}
         </List>
       </div>
@@ -73,4 +80,8 @@ class AutoCompeletePanel extends React.Component {
   }
 }
 
-export default AutoCompeletePanel;
+AutoCompeletePanel.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(AutoCompeletePanel);

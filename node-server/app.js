@@ -3,6 +3,7 @@ const app = express();
 const port = 3001;
 const cors = require('cors');
 const Amadeus = require('amadeus');
+const cities = require('./cities');
 
 app.use(cors());
 
@@ -13,8 +14,11 @@ const amadeus = new Amadeus({
 
 app.get('/', (req, res) => res.send('Hello World!'));
 
+app.get('/cities', (req, res) => {
+    res.send(cities);
+});
+
 app.get('/flights', (req, res) => {
-    console.log(req.query);
     amadeus.shopping.flightOffers.get({
         origin : req.query.origin,
         destination : req.query.destination,
@@ -22,10 +26,9 @@ app.get('/flights', (req, res) => {
     })
     .then(res => JSON.stringify(res.result['data']))
     .then(data => {
-      console.log(data);
       res.send(data);
     })
-    .catch(err => console.log(err));
+    .catch(err => res.send("no match"));
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

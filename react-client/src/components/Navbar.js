@@ -11,8 +11,8 @@ import AutoCompeletePanel from './AutoCompeletePanel';
 import { fade } from '@material-ui/core/styles/colorManipulator';
 import { withStyles } from '@material-ui/core/styles';
 
-const styles = theme => ({
-  root: {
+const styles = theme => (
+  {root: {
     width: '100%',
   },
   grow: {
@@ -75,6 +75,15 @@ const styles = theme => ({
     [theme.breakpoints.up('md')]: {
       width: 200,
     },
+  },
+  auto: {
+    float: 'right',
+    marginTop: theme.spacing.unit * 6.25,
+    zIndex: 1,
+    marginRight: theme.spacing.unit * 54,
+  },
+  bar: {
+    zIndex: 0
   }
 });
 
@@ -142,7 +151,7 @@ class NavBar extends React.Component {
     let origin = this.getCode(this.state.from);
     let destination = this.getCode(this.state.to);
     let header = 'http://localhost:3001/flights?';
-    let tail = 'origin=' + origin + '&' + 'destination=' + destination + '&' + 'departureDate=' + departureDate;
+    let tail = 'origin=' + origin + '&destination=' + destination + '&departureDate=' + departureDate;
     let url = header + tail;
     fetch(url)
       .then(res => res.json())
@@ -156,7 +165,7 @@ class NavBar extends React.Component {
 
     return (
       <div className={classes.root}>
-        <AppBar position="fixed">
+        <AppBar position="fixed" className={classes.bar}>
           <Toolbar>
             <Typography className={classes.title} variant="h6" color="inherit" noWrap>
               Flight Delay Terminator
@@ -207,8 +216,10 @@ class NavBar extends React.Component {
             </Button>
           </Toolbar>
         </AppBar>
-        <AutoCompeletePanel origin='from' handleChoose={this.handleChoose.bind(this)} input={this.state.from} />
-        <AutoCompeletePanel origin='to' handleChoose={this.handleChoose.bind(this)} input={this.state.to} />
+        <div className={classes.auto}>
+          <AutoCompeletePanel origin='from' handleChoose={this.handleChoose.bind(this)} input={this.state.from} />
+          <AutoCompeletePanel origin='to' handleChoose={this.handleChoose.bind(this)} input={this.state.to} />
+        </div>
       </div>
     );
   }
