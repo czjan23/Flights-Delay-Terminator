@@ -1,3 +1,5 @@
+const abbrToFull = require('../data/carriers');
+
 const getTimeRange = (startTime, endTime) => {
   let start = new Date(startTime);
   let end = new Date(endTime);
@@ -30,12 +32,14 @@ const process = (data) => {
     let intervals = [];
     segments.forEach((segment, index) => {
       pieces.push({
-        carrier: segment.flightSegment.carrierCode,
+        carrierFull: abbrToFull[segment.flightSegment.carrierCode],
+        carrierCode: segment.flightSegment.carrierCode,
         number: segment.flightSegment.number,
         departureAirport: segment.flightSegment.departure.iataCode,
         arrivalAirport: segment.flightSegment.arrival.iataCode,
         departureTime: getTime(segment.flightSegment.departure.at),
-        arrivalTime: getTime(segment.flightSegment.arrival.at)
+        arrivalTime: getTime(segment.flightSegment.arrival.at),
+        duration: getTimeRange(segment.flightSegment.departure.at, segment.flightSegment.arrival.at)
       });
       if (index !== segments.length - 1) {
         intervals.push(getInterval(segment, segments[index + 1]));

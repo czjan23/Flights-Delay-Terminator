@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = 3001;
 const cors = require('cors');
-const cities = require('./cities');
+const cities = require('./data/cities');
 const process = require('./utils/dataProcess');
 const amadeusQuery = require('./utils/amadeusAgent');
 
