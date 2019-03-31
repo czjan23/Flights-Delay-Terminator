@@ -78,9 +78,10 @@ const styles = theme => (
   },
   auto: {
     float: 'right',
-    marginTop: theme.spacing.unit * 6.25,
+    color: 'white',
     zIndex: 1,
     marginRight: theme.spacing.unit * 54,
+    position: 'absolute'
   },
   bar: {
     zIndex: 0
@@ -186,6 +187,9 @@ class NavBar extends React.Component {
                   input: classes.inputInput,
                 }}
               />
+              <div className={classes.auto}>
+                <AutoCompeletePanel origin='from' handleChoose={this.handleChoose.bind(this)} input={this.state.from} />
+              </div>
             </div>
             <div className={classes.inputArea}>
               <div className={classes.areaLabel}>
@@ -202,6 +206,10 @@ class NavBar extends React.Component {
                   input: classes.inputInput,
                 }}
               />
+              <div className={classes.auto}>
+                <AutoCompeletePanel origin='to' handleChoose={this.handleChoose.bind(this)} input={this.state.to} />
+              </div>
+              
             </div>
             <div className={classes.inputArea}>
               <div className={classes.areaLabel}>
@@ -216,10 +224,10 @@ class NavBar extends React.Component {
             </Button>
           </Toolbar>
         </AppBar>
-        <div className={classes.auto}>
+        {/* <div className={classes.auto}>
           <AutoCompeletePanel origin='from' handleChoose={this.handleChoose.bind(this)} input={this.state.from} />
           <AutoCompeletePanel origin='to' handleChoose={this.handleChoose.bind(this)} input={this.state.to} />
-        </div>
+        </div> */}
       </div>
     );
   }

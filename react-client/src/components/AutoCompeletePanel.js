@@ -11,11 +11,12 @@ const styles = theme => ({
   root: {
     display: 'inline-block',
     width: '288px',
-    marginLeft: '40px',
   },
   listArea: {
     maxHeight: '250px',
     overflow: 'auto',
+    backgroundColor: '#a0a9db',
+    borderRadius: '0 0 10px 10px'
   },
 });
 
@@ -23,6 +24,7 @@ class AutoCompeletePanel extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      hasSuggestion: false,
       suggestions: [],
       base: []
     };
@@ -42,7 +44,7 @@ class AutoCompeletePanel extends React.Component {
       return;
     }
     if (nextProps.input === '') {
-      this.setState({suggestions: []});
+      this.setState({suggestions: [], hasSuggestion: false});
       return;
     }
     let list = [];
@@ -54,11 +56,11 @@ class AutoCompeletePanel extends React.Component {
     if (list.length === 1 && list[0] === nextProps.input) {
       return;
     }
-    this.setState({suggestions: list});
+    this.setState({suggestions: list, hasSuggestion: true});
   }
 
   handleChoose(e) {
-    this.setState({suggestions: []});
+    this.setState({suggestions: [], hasSuggestion: false});
     this.props.handleChoose(this.props.origin, e.target.innerText);
   }
 
@@ -72,9 +74,11 @@ class AutoCompeletePanel extends React.Component {
 
     return (
       <div className={classes.root}>
-        <List className={classes.listArea}>
-          {list}
-        </List>
+        {this.state.hasSuggestion ? (
+          <List className={classes.listArea}>
+            {list}
+        </List>) : null}
+        
       </div>
     );
   }
