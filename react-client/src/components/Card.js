@@ -31,7 +31,7 @@ class Card extends React.Component {
     let segments = plan.services[0].segments;
 
     return (
-      <div style={{border: '2px solid black', width: '300px', margin: '10px auto'}}>
+      <div style={{border: '2px solid black', width: '300px', margin: '10px 0'}}>
       <div>
         <h3>total price: ${price}</h3>
         <h3>total time: {this.getTimeRange(segments)}</h3>
