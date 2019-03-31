@@ -145,9 +145,6 @@ class NavBar extends React.Component {
   }
 
   handleSubmit() {
-    // origin : 'AUS',
-    // destination : 'SFO',
-    // departureDate : '2019-04-01'
     let departureDate = this.getDay();
     let origin = this.getCode(this.state.from);
     let destination = this.getCode(this.state.to);
@@ -209,7 +206,7 @@ class NavBar extends React.Component {
               <div className={classes.auto}>
                 <AutoCompeletePanel origin='to' handleChoose={this.handleChoose.bind(this)} input={this.state.to} />
               </div>
-              
+
             </div>
             <div className={classes.inputArea}>
               <div className={classes.areaLabel}>
@@ -224,10 +221,6 @@ class NavBar extends React.Component {
             </Button>
           </Toolbar>
         </AppBar>
-        {/* <div className={classes.auto}>
-          <AutoCompeletePanel origin='from' handleChoose={this.handleChoose.bind(this)} input={this.state.from} />
-          <AutoCompeletePanel origin='to' handleChoose={this.handleChoose.bind(this)} input={this.state.to} />
-        </div> */}
       </div>
     );
   }

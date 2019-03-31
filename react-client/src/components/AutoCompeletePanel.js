@@ -71,18 +71,17 @@ class AutoCompeletePanel extends React.Component {
   render() {
     const { classes } = this.props;
 
-    let list = [];
-    this.state.suggestions.forEach((suggestion, index) => {
-      list.push(<ListItem onClick={this.handleChoose.bind(this)} key={index} button><ListItemText primary={suggestion} /></ListItem>);
-    })
-
     return (
       <div className={classes.root}>
         {this.state.hasSuggestion ? (
           <List className={classes.listArea}>
-            {list}
+            {this.state.suggestions.map((suggestion, index) => {
+              return (
+                <ListItem onClick={this.handleChoose.bind(this)} key={index} button><ListItemText primary={suggestion} /></ListItem>
+              )
+            })}
         </List>) : null}
-        
+
       </div>
     );
   }
