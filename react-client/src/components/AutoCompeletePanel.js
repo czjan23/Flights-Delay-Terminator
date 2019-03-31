@@ -53,6 +53,10 @@ class AutoCompeletePanel extends React.Component {
         list.push(suggestion);
       }
     });
+    if (list.length === 0) {
+      this.setState({suggestions: [], hasSuggestion: false})
+      return;
+    }
     if (list.length === 1 && list[0] === nextProps.input) {
       return;
     }
