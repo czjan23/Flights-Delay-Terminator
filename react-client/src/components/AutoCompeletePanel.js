@@ -9,8 +9,8 @@ import { fade } from '@material-ui/core/styles/colorManipulator';
 
 const styles = theme => ({
   root: {
-    width: '288px',
     display: 'inline-block',
+    width: '288px',
     marginLeft: '40px',
   },
   listArea: {

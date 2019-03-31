@@ -1,21 +1,17 @@
 const Amadeus = require('amadeus');
-// const fs = require('fs');
+const fs = require('fs');
 
 const amadeus = new Amadeus({
   clientId: 'cdKClxFRrtRLLQWMHhyQjqbpYUaWKwA9',
   clientSecret: 'pbwBckoaG2AfPUvO'
 });
 
-const getFlights = (origin, destination, departureDate) => {
-  amadeus.shopping.flightOffers.get({
-      origin : origin,
-      destination : destination,
-      departureDate : departureDate
-  })
-  .then(res => {
-    return JSON.stringify(res.result['data'][0]);
-  })
-  .catch(err => console.log(err));
-}
-
-module.exports = getFlights;
+amadeus.shopping.flightOffers.get({
+  origin : 'IAH',
+  destination : 'SFO',
+  departureDate : '2019-04-02'
+})
+.then(res => {
+  fs.writeFileSync('test.json', JSON.stringify(res.result['data']));
+})
+.catch(err => console.log(err));
