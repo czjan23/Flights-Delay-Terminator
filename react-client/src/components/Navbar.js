@@ -153,9 +153,7 @@ class NavBar extends React.Component {
     let url = header + tail;
     fetch(url)
       .then(res => res.json())
-      .then(res => {
-        this.props.handleSearch(res);
-      });
+      .then(res => this.props.handleSearch(res));
   }
 
   render() {
@@ -171,9 +169,9 @@ class NavBar extends React.Component {
             <div className={classes.grow} />
             <div className={classes.inputArea}>
               <div className={classes.areaLabel}>
-              <Typography color="inherit" variant="subtitle1">
-                From
-              </Typography>
+                <Typography color="inherit" variant="subtitle1">
+                  From
+                </Typography>
               </div>
               <InputBase
                 value={this.state.from}
@@ -190,9 +188,9 @@ class NavBar extends React.Component {
             </div>
             <div className={classes.inputArea}>
               <div className={classes.areaLabel}>
-              <Typography color="inherit" variant="subtitle1">
-                To
-              </Typography>
+                <Typography color="inherit" variant="subtitle1">
+                  To
+                </Typography>
               </div>
               <InputBase
                 value={this.state.to}
@@ -206,13 +204,12 @@ class NavBar extends React.Component {
               <div className={classes.auto}>
                 <AutoCompeletePanel origin='to' handleChoose={this.handleChoose.bind(this)} input={this.state.to} />
               </div>
-
             </div>
             <div className={classes.inputArea}>
               <div className={classes.areaLabel}>
-              <Typography color="inherit" variant="subtitle1">
-                Date
-              </Typography>
+                <Typography color="inherit" variant="subtitle1">
+                  Date
+                </Typography>
               </div>
               <InlineDatePicker InputProps={{disableUnderline: true, className: classes.dateInput}} format="MM/dd/yyyy" value={this.state.date} onChange={this.handleDateChange.bind(this)} />
             </div>
