@@ -9,7 +9,8 @@ const amadeusQuery = (origin, destination, departureDate) => {
   return amadeus.shopping.flightOffers.get({
     origin : origin,
     destination : destination,
-    departureDate : departureDate
+    departureDate : departureDate,
+    currency: 'USD'
   });
 }
 
