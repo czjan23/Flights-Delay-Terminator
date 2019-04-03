@@ -1,0 +1,3812 @@
+[
+    {
+        "type": "flight-offer",
+        "id": "1554062282029--854795617",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "A",
+                                        "at": "2019-04-02T11:45:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SLC",
+                                        "terminal": "2",
+                                        "at": "2019-04-02T14:02:00-06:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "4093",
+                                    "aircraft": {
+                                        "code": "CR9"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "4093"
+                                    },
+                                    "duration": "0DT3H17M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "H",
+                                    "availability": 9,
+                                    "fareBasis": "HA0NA0MQ"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "SLC",
+                                        "terminal": "2",
+                                        "at": "2019-04-02T17:00:00-06:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "1",
+                                        "at": "2019-04-02T18:13:00-07:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "4197",
+                                    "aircraft": {
+                                        "code": "E7W"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "4197"
+                                    },
+                                    "duration": "0DT2H13M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "H",
+                                    "availability": 9,
+                                    "fareBasis": "HA0NA0MQ"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029--1937396711",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "C",
+                                        "at": "2019-04-02T12:30:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "DEN",
+                                        "at": "2019-04-02T13:57:00-06:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "1874",
+                                    "aircraft": {
+                                        "code": "320"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "1874"
+                                    },
+                                    "duration": "0DT2H27M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "DEN",
+                                        "at": "2019-04-02T15:40:00-06:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "3",
+                                        "at": "2019-04-02T17:24:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "735",
+                                    "aircraft": {
+                                        "code": "320"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "735"
+                                    },
+                                    "duration": "0DT2H44M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029--1824235395",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "A",
+                                        "at": "2019-04-02T07:05:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "ATL",
+                                        "terminal": "S",
+                                        "at": "2019-04-02T10:01:00-04:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "1817",
+                                    "aircraft": {
+                                        "code": "M90"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "1817"
+                                    },
+                                    "duration": "0DT1H56M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "H",
+                                    "availability": 9,
+                                    "fareBasis": "HA0NA0MQ"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "ATL",
+                                        "terminal": "S",
+                                        "at": "2019-04-02T11:00:00-04:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "1",
+                                        "at": "2019-04-02T13:15:00-07:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "765",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "765"
+                                    },
+                                    "duration": "0DT5H15M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "H",
+                                    "availability": 9,
+                                    "fareBasis": "HA0NA0MQ"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029--1847194961",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "A",
+                                        "at": "2019-04-02T06:00:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SEA",
+                                        "at": "2019-04-02T09:00:00-07:00"
+                                    },
+                                    "carrierCode": "AS",
+                                    "number": "347",
+                                    "aircraft": {
+                                        "code": "73J"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "AS",
+                                        "number": "347"
+                                    },
+                                    "duration": "0DT5H0M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "X",
+                                    "availability": 7,
+                                    "fareBasis": "VH0OAJBN"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "SEA",
+                                        "at": "2019-04-02T11:15:00-07:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "0",
+                                        "at": "2019-04-02T13:30:00-07:00"
+                                    },
+                                    "carrierCode": "AS",
+                                    "number": "304",
+                                    "aircraft": {
+                                        "code": "73J"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "AS",
+                                        "number": "304"
+                                    },
+                                    "duration": "0DT2H15M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "X",
+                                    "availability": 7,
+                                    "fareBasis": "VH0OAJBN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "296.45",
+                    "totalTaxes": "39.45"
+                },
+                "pricePerAdult": {
+                    "total": "296.45",
+                    "totalTaxes": "39.45"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029--1539522864",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "A",
+                                        "at": "2019-04-02T08:00:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SLC",
+                                        "terminal": "2",
+                                        "at": "2019-04-02T10:27:00-06:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "2784",
+                                    "aircraft": {
+                                        "code": "717"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "2784"
+                                    },
+                                    "duration": "0DT3H27M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "H",
+                                    "availability": 9,
+                                    "fareBasis": "HA0QA0MQ"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "SLC",
+                                        "terminal": "2",
+                                        "at": "2019-04-02T15:00:00-06:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "1",
+                                        "at": "2019-04-02T16:11:00-07:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "4553",
+                                    "aircraft": {
+                                        "code": "E7W"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "4553"
+                                    },
+                                    "duration": "0DT2H11M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "U",
+                                    "availability": 9,
+                                    "fareBasis": "UA0NA0ME"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "684.05",
+                    "totalTaxes": "71.05"
+                },
+                "pricePerAdult": {
+                    "total": "684.05",
+                    "totalTaxes": "71.05"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029--73213134",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "C",
+                                        "at": "2019-04-02T08:10:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "DEN",
+                                        "at": "2019-04-02T09:40:00-06:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "2118",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "2118"
+                                    },
+                                    "duration": "0DT2H30M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "DEN",
+                                        "at": "2019-04-02T10:53:00-06:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "3",
+                                        "at": "2019-04-02T12:39:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "264",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "264"
+                                    },
+                                    "duration": "0DT2H46M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029-812321092",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "C",
+                                        "at": "2019-04-02T13:06:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "3",
+                                        "at": "2019-04-02T15:25:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "2187",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "2187"
+                                    },
+                                    "duration": "0DT4H19M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "478.02",
+                    "totalTaxes": "45.02"
+                },
+                "pricePerAdult": {
+                    "total": "478.02",
+                    "totalTaxes": "45.02"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029-2145306391",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "C",
+                                        "at": "2019-04-02T11:55:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "3",
+                                        "at": "2019-04-02T14:14:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "1815",
+                                    "aircraft": {
+                                        "code": "320"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "1815"
+                                    },
+                                    "duration": "0DT4H19M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "478.02",
+                    "totalTaxes": "45.02"
+                },
+                "pricePerAdult": {
+                    "total": "478.02",
+                    "totalTaxes": "45.02"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029-527323541",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "B",
+                                        "at": "2019-04-02T22:15:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "AUS",
+                                        "at": "2019-04-02T23:11:00-05:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "6120",
+                                    "aircraft": {
+                                        "code": "E7W"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "6120"
+                                    },
+                                    "duration": "0DT0H56M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "Q",
+                                    "availability": 9,
+                                    "fareBasis": "QAA0AKEY"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "AUS",
+                                        "at": "2019-04-03T06:35:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "3",
+                                        "at": "2019-04-03T08:31:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "2123",
+                                    "aircraft": {
+                                        "code": "319"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "2123"
+                                    },
+                                    "duration": "0DT3H56M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "W",
+                                    "availability": 9,
+                                    "fareBasis": "WAA3AQDN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "451.87",
+                    "totalTaxes": "54.87"
+                },
+                "pricePerAdult": {
+                    "total": "451.87",
+                    "totalTaxes": "54.87"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029-817416189",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "C",
+                                        "at": "2019-04-02T15:15:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "LAX",
+                                        "terminal": "7",
+                                        "at": "2019-04-02T16:54:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "1450",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "1450"
+                                    },
+                                    "duration": "0DT3H39M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "LAX",
+                                        "terminal": "7",
+                                        "at": "2019-04-02T18:45:00-07:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "3",
+                                        "at": "2019-04-02T20:17:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "481",
+                                    "aircraft": {
+                                        "code": "320"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "481"
+                                    },
+                                    "duration": "0DT1H32M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029--118641031",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "C",
+                                        "at": "2019-04-02T16:29:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "3",
+                                        "at": "2019-04-02T18:48:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "1700",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "1700"
+                                    },
+                                    "duration": "0DT4H19M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "478.02",
+                    "totalTaxes": "45.02"
+                },
+                "pricePerAdult": {
+                    "total": "478.02",
+                    "totalTaxes": "45.02"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029--685315336",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "C",
+                                        "at": "2019-04-02T14:43:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "DEN",
+                                        "at": "2019-04-02T16:14:00-06:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "2300",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "2300"
+                                    },
+                                    "duration": "0DT2H31M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "DEN",
+                                        "at": "2019-04-02T17:21:00-06:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "3",
+                                        "at": "2019-04-02T19:09:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "737",
+                                    "aircraft": {
+                                        "code": "738"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "737"
+                                    },
+                                    "duration": "0DT2H48M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029--506914713",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "C",
+                                        "at": "2019-04-02T16:28:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "DEN",
+                                        "at": "2019-04-02T18:10:00-06:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "825",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "825"
+                                    },
+                                    "duration": "0DT2H42M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "DEN",
+                                        "at": "2019-04-02T18:55:00-06:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "3",
+                                        "at": "2019-04-02T20:39:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "257",
+                                    "aircraft": {
+                                        "code": "777"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "257"
+                                    },
+                                    "duration": "0DT2H44M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029--979374757",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "C",
+                                        "at": "2019-04-02T09:35:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "3",
+                                        "at": "2019-04-02T11:54:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "1998",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "1998"
+                                    },
+                                    "duration": "0DT4H19M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "478.02",
+                    "totalTaxes": "45.02"
+                },
+                "pricePerAdult": {
+                    "total": "478.02",
+                    "totalTaxes": "45.02"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029-1077416778",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "C",
+                                        "at": "2019-04-02T12:25:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "LAX",
+                                        "terminal": "7",
+                                        "at": "2019-04-02T14:04:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "1117",
+                                    "aircraft": {
+                                        "code": "77W"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "1117"
+                                    },
+                                    "duration": "0DT3H39M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "LAX",
+                                        "terminal": "7",
+                                        "at": "2019-04-02T15:45:00-07:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "3",
+                                        "at": "2019-04-02T17:14:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "460",
+                                    "aircraft": {
+                                        "code": "738"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "460"
+                                    },
+                                    "duration": "0DT1H29M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029--143511210",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "C",
+                                        "at": "2019-04-02T20:16:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "LAX",
+                                        "terminal": "7",
+                                        "at": "2019-04-02T22:00:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "1842",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "1842"
+                                    },
+                                    "duration": "0DT3H44M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "LAX",
+                                        "terminal": "7",
+                                        "at": "2019-04-02T22:45:00-07:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "3",
+                                        "at": "2019-04-03T00:15:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "398",
+                                    "aircraft": {
+                                        "code": "320"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "398"
+                                    },
+                                    "duration": "0DT1H30M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029--1441405490",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "C",
+                                        "at": "2019-04-02T19:50:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "3",
+                                        "at": "2019-04-02T22:10:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "1844",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "1844"
+                                    },
+                                    "duration": "0DT4H20M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "478.02",
+                    "totalTaxes": "45.02"
+                },
+                "pricePerAdult": {
+                    "total": "478.02",
+                    "totalTaxes": "45.02"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029-401138909",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "A",
+                                        "at": "2019-04-02T19:41:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "LAX",
+                                        "terminal": "0",
+                                        "at": "2019-04-02T21:35:00-07:00"
+                                    },
+                                    "carrierCode": "AS",
+                                    "number": "4030",
+                                    "aircraft": {
+                                        "code": "E75"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "AA",
+                                        "number": "4030"
+                                    },
+                                    "duration": "0DT3H54M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "V",
+                                    "availability": 7,
+                                    "fareBasis": "VH0OAKMN"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "LAX",
+                                        "terminal": "6",
+                                        "at": "2019-04-02T23:00:00-07:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "0",
+                                        "at": "2019-04-03T00:40:00-07:00"
+                                    },
+                                    "carrierCode": "AS",
+                                    "number": "3445",
+                                    "aircraft": {
+                                        "code": "E75"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "AS",
+                                        "number": "3445"
+                                    },
+                                    "duration": "0DT1H40M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "V",
+                                    "availability": 7,
+                                    "fareBasis": "VH0OAKMN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029--338896921",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "A",
+                                        "at": "2019-04-02T13:41:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "LAX",
+                                        "terminal": "0",
+                                        "at": "2019-04-02T15:31:00-07:00"
+                                    },
+                                    "carrierCode": "AS",
+                                    "number": "4639",
+                                    "aircraft": {
+                                        "code": "319"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "AA",
+                                        "number": "4639"
+                                    },
+                                    "duration": "0DT3H50M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "V",
+                                    "availability": 7,
+                                    "fareBasis": "VH0OAKMN"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "LAX",
+                                        "terminal": "6",
+                                        "at": "2019-04-02T18:30:00-07:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "0",
+                                        "at": "2019-04-02T20:00:00-07:00"
+                                    },
+                                    "carrierCode": "AS",
+                                    "number": "1943",
+                                    "aircraft": {
+                                        "code": "32S"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "AS",
+                                        "number": "1943"
+                                    },
+                                    "duration": "0DT1H30M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "V",
+                                    "availability": 7,
+                                    "fareBasis": "VH0OAKMN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029--65861110",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "A",
+                                        "at": "2019-04-02T13:41:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "LAX",
+                                        "terminal": "0",
+                                        "at": "2019-04-02T15:31:00-07:00"
+                                    },
+                                    "carrierCode": "AS",
+                                    "number": "4639",
+                                    "aircraft": {
+                                        "code": "319"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "AA",
+                                        "number": "4639"
+                                    },
+                                    "duration": "0DT3H50M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "Y",
+                                    "availability": 7,
+                                    "fareBasis": "YA2AA"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "LAX",
+                                        "terminal": "6",
+                                        "at": "2019-04-02T20:30:00-07:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "0",
+                                        "at": "2019-04-02T22:00:00-07:00"
+                                    },
+                                    "carrierCode": "AS",
+                                    "number": "1945",
+                                    "aircraft": {
+                                        "code": "32S"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "AS",
+                                        "number": "1945"
+                                    },
+                                    "duration": "0DT1H30M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "Q",
+                                    "availability": 7,
+                                    "fareBasis": "QH0OAVMN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "1144.12",
+                    "totalTaxes": "103.12"
+                },
+                "pricePerAdult": {
+                    "total": "1144.12",
+                    "totalTaxes": "103.12"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029-1152160399",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "A",
+                                        "at": "2019-04-02T15:45:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "MSP",
+                                        "terminal": "1",
+                                        "at": "2019-04-02T18:35:00-05:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "5382",
+                                    "aircraft": {
+                                        "code": "CR9"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "5382"
+                                    },
+                                    "duration": "0DT2H50M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "H",
+                                    "availability": 9,
+                                    "fareBasis": "HA0NA0MQ"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "MSP",
+                                        "terminal": "1",
+                                        "at": "2019-04-02T19:59:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "1",
+                                        "at": "2019-04-02T22:25:00-07:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "1610",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "1610"
+                                    },
+                                    "duration": "0DT4H26M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "H",
+                                    "availability": 9,
+                                    "fareBasis": "HA0NA0MQ"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029--854146288",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "A",
+                                        "at": "2019-04-02T06:00:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "ATL",
+                                        "terminal": "S",
+                                        "at": "2019-04-02T09:02:00-04:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "1717",
+                                    "aircraft": {
+                                        "code": "M90"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "1717"
+                                    },
+                                    "duration": "0DT2H2M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "H",
+                                    "availability": 9,
+                                    "fareBasis": "HA0NA0MQ"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "ATL",
+                                        "terminal": "S",
+                                        "at": "2019-04-02T11:00:00-04:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "1",
+                                        "at": "2019-04-02T13:15:00-07:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "765",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "765"
+                                    },
+                                    "duration": "0DT5H15M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "H",
+                                    "availability": 9,
+                                    "fareBasis": "HA0NA0MQ"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029-1753693695",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "A",
+                                        "at": "2019-04-02T09:35:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "ATL",
+                                        "terminal": "S",
+                                        "at": "2019-04-02T12:39:00-04:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "350",
+                                    "aircraft": {
+                                        "code": "M90"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "350"
+                                    },
+                                    "duration": "0DT2H4M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "H",
+                                    "availability": 9,
+                                    "fareBasis": "HA0NA0MQ"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "ATL",
+                                        "terminal": "S",
+                                        "at": "2019-04-02T14:57:00-04:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "1",
+                                        "at": "2019-04-02T17:26:00-07:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "769",
+                                    "aircraft": {
+                                        "code": "753"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "769"
+                                    },
+                                    "duration": "0DT5H29M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "H",
+                                    "availability": 9,
+                                    "fareBasis": "HA0NA0MQ"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029--1972398795",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "A",
+                                        "at": "2019-04-02T13:41:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "LAX",
+                                        "terminal": "0",
+                                        "at": "2019-04-02T15:31:00-07:00"
+                                    },
+                                    "carrierCode": "AS",
+                                    "number": "4639",
+                                    "aircraft": {
+                                        "code": "319"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "AA",
+                                        "number": "4639"
+                                    },
+                                    "duration": "0DT3H50M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "V",
+                                    "availability": 7,
+                                    "fareBasis": "VH0OAKMN"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "LAX",
+                                        "terminal": "6",
+                                        "at": "2019-04-02T17:30:00-07:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "0",
+                                        "at": "2019-04-02T19:00:00-07:00"
+                                    },
+                                    "carrierCode": "AS",
+                                    "number": "933",
+                                    "aircraft": {
+                                        "code": "73H"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "AS",
+                                        "number": "933"
+                                    },
+                                    "duration": "0DT1H30M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "V",
+                                    "availability": 7,
+                                    "fareBasis": "VH0OAKMN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029-1629114427",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "C",
+                                        "at": "2019-04-02T16:45:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "LAX",
+                                        "terminal": "7",
+                                        "at": "2019-04-02T18:35:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "1236",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "1236"
+                                    },
+                                    "duration": "0DT3H50M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "LAX",
+                                        "terminal": "7",
+                                        "at": "2019-04-02T20:45:00-07:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "3",
+                                        "at": "2019-04-02T22:16:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "2201",
+                                    "aircraft": {
+                                        "code": "738"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "2201"
+                                    },
+                                    "duration": "0DT1H31M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029-763239915",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "C",
+                                        "at": "2019-04-02T16:45:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "LAX",
+                                        "terminal": "7",
+                                        "at": "2019-04-02T18:35:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "1236",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "1236"
+                                    },
+                                    "duration": "0DT3H50M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "LAX",
+                                        "terminal": "7",
+                                        "at": "2019-04-02T19:45:00-07:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "3",
+                                        "at": "2019-04-02T21:18:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "283",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "283"
+                                    },
+                                    "duration": "0DT1H33M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029-546248188",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "C",
+                                        "at": "2019-04-02T18:16:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "3",
+                                        "at": "2019-04-02T20:35:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "2264",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "2264"
+                                    },
+                                    "duration": "0DT4H19M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "478.02",
+                    "totalTaxes": "45.02"
+                },
+                "pricePerAdult": {
+                    "total": "478.02",
+                    "totalTaxes": "45.02"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029--281357587",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "C",
+                                        "at": "2019-04-02T10:38:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "LAX",
+                                        "terminal": "7",
+                                        "at": "2019-04-02T12:24:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "1956",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "1956"
+                                    },
+                                    "duration": "0DT3H46M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "LAX",
+                                        "terminal": "7",
+                                        "at": "2019-04-02T14:00:00-07:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "3",
+                                        "at": "2019-04-02T15:38:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "420",
+                                    "aircraft": {
+                                        "code": "738"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "420"
+                                    },
+                                    "duration": "0DT1H38M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029-643231647",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "A",
+                                        "at": "2019-04-02T06:00:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SEA",
+                                        "at": "2019-04-02T09:00:00-07:00"
+                                    },
+                                    "carrierCode": "AS",
+                                    "number": "347",
+                                    "aircraft": {
+                                        "code": "73J"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "AS",
+                                        "number": "347"
+                                    },
+                                    "duration": "0DT5H0M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "X",
+                                    "availability": 7,
+                                    "fareBasis": "VH0OAJBN"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "SEA",
+                                        "at": "2019-04-02T09:45:00-07:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "0",
+                                        "at": "2019-04-02T12:00:00-07:00"
+                                    },
+                                    "carrierCode": "AS",
+                                    "number": "1305",
+                                    "aircraft": {
+                                        "code": "32S"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "AS",
+                                        "number": "1305"
+                                    },
+                                    "duration": "0DT2H15M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "X",
+                                    "availability": 7,
+                                    "fareBasis": "VH0OAJBN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "296.45",
+                    "totalTaxes": "39.45"
+                },
+                "pricePerAdult": {
+                    "total": "296.45",
+                    "totalTaxes": "39.45"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029-905715136",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "C",
+                                        "at": "2019-04-02T10:20:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "DEN",
+                                        "at": "2019-04-02T11:51:00-06:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "376",
+                                    "aircraft": {
+                                        "code": "777"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "376"
+                                    },
+                                    "duration": "0DT2H31M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "DEN",
+                                        "at": "2019-04-02T13:25:00-06:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "3",
+                                        "at": "2019-04-02T15:11:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "1478",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "1478"
+                                    },
+                                    "duration": "0DT2H46M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029-1387288768",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "A",
+                                        "at": "2019-04-02T06:00:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SEA",
+                                        "at": "2019-04-02T09:00:00-07:00"
+                                    },
+                                    "carrierCode": "AS",
+                                    "number": "347",
+                                    "aircraft": {
+                                        "code": "73J"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "AS",
+                                        "number": "347"
+                                    },
+                                    "duration": "0DT5H0M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "X",
+                                    "availability": 7,
+                                    "fareBasis": "VH0OAJBN"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "SEA",
+                                        "at": "2019-04-02T12:25:00-07:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "0",
+                                        "at": "2019-04-02T14:40:00-07:00"
+                                    },
+                                    "carrierCode": "AS",
+                                    "number": "1076",
+                                    "aircraft": {
+                                        "code": "32S"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "AS",
+                                        "number": "1076"
+                                    },
+                                    "duration": "0DT2H15M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "X",
+                                    "availability": 7,
+                                    "fareBasis": "VH0OAJBN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "296.45",
+                    "totalTaxes": "39.45"
+                },
+                "pricePerAdult": {
+                    "total": "296.45",
+                    "totalTaxes": "39.45"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029--687388030",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "C",
+                                        "at": "2019-04-02T18:15:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "LAX",
+                                        "terminal": "7",
+                                        "at": "2019-04-02T19:53:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "2172",
+                                    "aircraft": {
+                                        "code": "777"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "2172"
+                                    },
+                                    "duration": "0DT3H38M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "LAX",
+                                        "terminal": "7",
+                                        "at": "2019-04-02T20:45:00-07:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "3",
+                                        "at": "2019-04-02T22:16:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "2201",
+                                    "aircraft": {
+                                        "code": "738"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "2201"
+                                    },
+                                    "duration": "0DT1H31M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029--1182035567",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "A",
+                                        "at": "2019-04-02T13:30:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "MSP",
+                                        "terminal": "1",
+                                        "at": "2019-04-02T16:18:00-05:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "3862",
+                                    "aircraft": {
+                                        "code": "CR9"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "3862"
+                                    },
+                                    "duration": "0DT2H48M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "H",
+                                    "availability": 9,
+                                    "fareBasis": "HA0NA0MQ"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "MSP",
+                                        "terminal": "1",
+                                        "at": "2019-04-02T17:55:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "1",
+                                        "at": "2019-04-02T20:08:00-07:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "2924",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "2924"
+                                    },
+                                    "duration": "0DT4H13M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "H",
+                                    "availability": 9,
+                                    "fareBasis": "HA0NA0MQ"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029-142397675",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "A",
+                                        "at": "2019-04-02T06:50:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "LAX",
+                                        "terminal": "0",
+                                        "at": "2019-04-02T08:50:00-07:00"
+                                    },
+                                    "carrierCode": "AS",
+                                    "number": "4441",
+                                    "aircraft": {
+                                        "code": "738"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "AA",
+                                        "number": "4441"
+                                    },
+                                    "duration": "0DT4H0M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "Y",
+                                    "availability": 7,
+                                    "fareBasis": "YA2AA"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "LAX",
+                                        "terminal": "6",
+                                        "at": "2019-04-02T13:30:00-07:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "0",
+                                        "at": "2019-04-02T15:00:00-07:00"
+                                    },
+                                    "carrierCode": "AS",
+                                    "number": "1929",
+                                    "aircraft": {
+                                        "code": "32S"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "AS",
+                                        "number": "1929"
+                                    },
+                                    "duration": "0DT1H30M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "Q",
+                                    "availability": 7,
+                                    "fareBasis": "QH0OAVMN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "1144.12",
+                    "totalTaxes": "103.12"
+                },
+                "pricePerAdult": {
+                    "total": "1144.12",
+                    "totalTaxes": "103.12"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029-1519426681",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "C",
+                                        "at": "2019-04-02T15:15:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "LAX",
+                                        "terminal": "7",
+                                        "at": "2019-04-02T16:54:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "1450",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "1450"
+                                    },
+                                    "duration": "0DT3H39M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "LAX",
+                                        "terminal": "7",
+                                        "at": "2019-04-02T17:30:00-07:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "3",
+                                        "at": "2019-04-02T19:04:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "632",
+                                    "aircraft": {
+                                        "code": "320"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "632"
+                                    },
+                                    "duration": "0DT1H34M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029--1314912230",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "A",
+                                        "at": "2019-04-02T18:50:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SLC",
+                                        "terminal": "2",
+                                        "at": "2019-04-02T21:10:00-06:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "3922",
+                                    "aircraft": {
+                                        "code": "E7W"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "3922"
+                                    },
+                                    "duration": "0DT3H20M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "H",
+                                    "availability": 9,
+                                    "fareBasis": "HA0NA0MQ"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "SLC",
+                                        "terminal": "2",
+                                        "at": "2019-04-02T22:30:00-06:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "1",
+                                        "at": "2019-04-02T23:43:00-07:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "1142",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "1142"
+                                    },
+                                    "duration": "0DT2H13M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "H",
+                                    "availability": 9,
+                                    "fareBasis": "HA0NA0MQ"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029-1934698663",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "A",
+                                        "at": "2019-04-02T15:48:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "DTW",
+                                        "terminal": "EM",
+                                        "at": "2019-04-02T19:35:00-04:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "3825",
+                                    "aircraft": {
+                                        "code": "CR9"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "3825"
+                                    },
+                                    "duration": "0DT2H47M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "H",
+                                    "availability": 9,
+                                    "fareBasis": "HA0NA0MQ"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "DTW",
+                                        "terminal": "EM",
+                                        "at": "2019-04-02T20:40:00-04:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "1",
+                                        "at": "2019-04-02T22:59:00-07:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "1829",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "1829"
+                                    },
+                                    "duration": "0DT5H19M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "H",
+                                    "availability": 9,
+                                    "fareBasis": "HA0NA0MQ"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029-1058672503",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "A",
+                                        "at": "2019-04-02T17:27:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "ATL",
+                                        "terminal": "S",
+                                        "at": "2019-04-02T20:30:00-04:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "54",
+                                    "aircraft": {
+                                        "code": "M90"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "54"
+                                    },
+                                    "duration": "0DT2H3M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "H",
+                                    "availability": 9,
+                                    "fareBasis": "HA0NA0MQ"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "ATL",
+                                        "terminal": "S",
+                                        "at": "2019-04-02T21:15:00-04:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "1",
+                                        "at": "2019-04-02T23:50:00-07:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "775",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "775"
+                                    },
+                                    "duration": "0DT5H35M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "H",
+                                    "availability": 9,
+                                    "fareBasis": "HA0NA0MQ"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029-379264331",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "A",
+                                        "at": "2019-04-02T15:57:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "ATL",
+                                        "terminal": "S",
+                                        "at": "2019-04-02T18:57:00-04:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "1673",
+                                    "aircraft": {
+                                        "code": "M90"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "1673"
+                                    },
+                                    "duration": "0DT2H0M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "H",
+                                    "availability": 9,
+                                    "fareBasis": "HA0NA0MQ"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "ATL",
+                                        "terminal": "S",
+                                        "at": "2019-04-02T21:15:00-04:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "1",
+                                        "at": "2019-04-02T23:50:00-07:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "775",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "775"
+                                    },
+                                    "duration": "0DT5H35M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "H",
+                                    "availability": 9,
+                                    "fareBasis": "HA0NA0MQ"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029-568735288",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "C",
+                                        "at": "2019-04-02T07:30:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "LAX",
+                                        "terminal": "7",
+                                        "at": "2019-04-02T09:17:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "1169",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "1169"
+                                    },
+                                    "duration": "0DT3H47M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "LAX",
+                                        "terminal": "7",
+                                        "at": "2019-04-02T10:45:00-07:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "3",
+                                        "at": "2019-04-02T12:22:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "2186",
+                                    "aircraft": {
+                                        "code": "738"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "2186"
+                                    },
+                                    "duration": "0DT1H37M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029--696061222",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "A",
+                                        "at": "2019-04-02T10:59:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "MSP",
+                                        "terminal": "1",
+                                        "at": "2019-04-02T13:50:00-05:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "5200",
+                                    "aircraft": {
+                                        "code": "CR9"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "5200"
+                                    },
+                                    "duration": "0DT2H51M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "H",
+                                    "availability": 9,
+                                    "fareBasis": "HA0NA0MQ"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "MSP",
+                                        "terminal": "1",
+                                        "at": "2019-04-02T14:45:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "1",
+                                        "at": "2019-04-02T17:05:00-07:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "719",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "719"
+                                    },
+                                    "duration": "0DT4H20M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "H",
+                                    "availability": 9,
+                                    "fareBasis": "HA0NA0MQ"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029--878331391",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "A",
+                                        "at": "2019-04-02T06:50:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "LAX",
+                                        "terminal": "0",
+                                        "at": "2019-04-02T08:50:00-07:00"
+                                    },
+                                    "carrierCode": "AS",
+                                    "number": "4441",
+                                    "aircraft": {
+                                        "code": "738"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "AA",
+                                        "number": "4441"
+                                    },
+                                    "duration": "0DT4H0M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "Y",
+                                    "availability": 7,
+                                    "fareBasis": "YA2AA"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "LAX",
+                                        "terminal": "6",
+                                        "at": "2019-04-02T11:45:00-07:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "0",
+                                        "at": "2019-04-02T13:15:00-07:00"
+                                    },
+                                    "carrierCode": "AS",
+                                    "number": "899",
+                                    "aircraft": {
+                                        "code": "73J"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "AS",
+                                        "number": "899"
+                                    },
+                                    "duration": "0DT1H30M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "Q",
+                                    "availability": 7,
+                                    "fareBasis": "QH0OAVMN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "1139.20",
+                    "totalTaxes": "98.20"
+                },
+                "pricePerAdult": {
+                    "total": "1139.20",
+                    "totalTaxes": "98.20"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029-1501899851",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "C",
+                                        "at": "2019-04-02T14:37:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "LAX",
+                                        "terminal": "7",
+                                        "at": "2019-04-02T16:05:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "1759",
+                                    "aircraft": {
+                                        "code": "789"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "1759"
+                                    },
+                                    "duration": "0DT3H28M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "LAX",
+                                        "terminal": "7",
+                                        "at": "2019-04-02T17:30:00-07:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "3",
+                                        "at": "2019-04-02T19:04:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "632",
+                                    "aircraft": {
+                                        "code": "320"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "632"
+                                    },
+                                    "duration": "0DT1H34M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029-372527427",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "C",
+                                        "at": "2019-04-02T06:45:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "DEN",
+                                        "at": "2019-04-02T08:14:00-06:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "2226",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "2226"
+                                    },
+                                    "duration": "0DT2H29M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "DEN",
+                                        "at": "2019-04-02T09:40:00-06:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "3",
+                                        "at": "2019-04-02T11:26:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "268",
+                                    "aircraft": {
+                                        "code": "739"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "268"
+                                    },
+                                    "duration": "0DT2H46M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029--563500796",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "C",
+                                        "at": "2019-04-02T07:25:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "3",
+                                        "at": "2019-04-02T09:35:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "404",
+                                    "aircraft": {
+                                        "code": "777"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "404"
+                                    },
+                                    "duration": "0DT4H10M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "478.02",
+                    "totalTaxes": "45.02"
+                },
+                "pricePerAdult": {
+                    "total": "478.02",
+                    "totalTaxes": "45.02"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029--51970878",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "C",
+                                        "at": "2019-04-02T14:30:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "3",
+                                        "at": "2019-04-02T16:51:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "1973",
+                                    "aircraft": {
+                                        "code": "320"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "1973"
+                                    },
+                                    "duration": "0DT4H21M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "478.02",
+                    "totalTaxes": "45.02"
+                },
+                "pricePerAdult": {
+                    "total": "478.02",
+                    "totalTaxes": "45.02"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029--1539254313",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "A",
+                                        "at": "2019-04-02T11:45:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SLC",
+                                        "terminal": "2",
+                                        "at": "2019-04-02T14:02:00-06:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "4093",
+                                    "aircraft": {
+                                        "code": "CR9"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "4093"
+                                    },
+                                    "duration": "0DT3H17M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "H",
+                                    "availability": 9,
+                                    "fareBasis": "HA0NA0MQ"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "SLC",
+                                        "terminal": "2",
+                                        "at": "2019-04-02T15:00:00-06:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "1",
+                                        "at": "2019-04-02T16:11:00-07:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "4553",
+                                    "aircraft": {
+                                        "code": "E7W"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "4553"
+                                    },
+                                    "duration": "0DT2H11M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "H",
+                                    "availability": 9,
+                                    "fareBasis": "HA0NA0MQ"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029-75095481",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "C",
+                                        "at": "2019-04-02T19:54:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "LAX",
+                                        "terminal": "7",
+                                        "at": "2019-04-02T21:39:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "1791",
+                                    "aircraft": {
+                                        "code": "320"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "1791"
+                                    },
+                                    "duration": "0DT3H45M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "LAX",
+                                        "terminal": "7",
+                                        "at": "2019-04-02T22:45:00-07:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "3",
+                                        "at": "2019-04-03T00:15:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "398",
+                                    "aircraft": {
+                                        "code": "320"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "398"
+                                    },
+                                    "duration": "0DT1H30M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029--1152488063",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "A",
+                                        "at": "2019-04-02T11:15:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "ATL",
+                                        "terminal": "S",
+                                        "at": "2019-04-02T14:16:00-04:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "318",
+                                    "aircraft": {
+                                        "code": "M90"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "318"
+                                    },
+                                    "duration": "0DT2H1M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "H",
+                                    "availability": 9,
+                                    "fareBasis": "HA0NA0MQ"
+                                }
+                            },
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "ATL",
+                                        "terminal": "S",
+                                        "at": "2019-04-02T14:57:00-04:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "1",
+                                        "at": "2019-04-02T17:26:00-07:00"
+                                    },
+                                    "carrierCode": "DL",
+                                    "number": "769",
+                                    "aircraft": {
+                                        "code": "753"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "DL",
+                                        "number": "769"
+                                    },
+                                    "duration": "0DT5H29M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "H",
+                                    "availability": 9,
+                                    "fareBasis": "HA0NA0MQ"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                },
+                "pricePerAdult": {
+                    "total": "485.66",
+                    "totalTaxes": "52.66"
+                }
+            }
+        ]
+    },
+    {
+        "type": "flight-offer",
+        "id": "1554062282029-2079147026",
+        "offerItems": [
+            {
+                "services": [
+                    {
+                        "segments": [
+                            {
+                                "flightSegment": {
+                                    "departure": {
+                                        "iataCode": "IAH",
+                                        "terminal": "C",
+                                        "at": "2019-04-02T09:56:00-05:00"
+                                    },
+                                    "arrival": {
+                                        "iataCode": "SFO",
+                                        "terminal": "3",
+                                        "at": "2019-04-02T12:15:00-07:00"
+                                    },
+                                    "carrierCode": "UA",
+                                    "number": "1927",
+                                    "aircraft": {
+                                        "code": "738"
+                                    },
+                                    "operating": {
+                                        "carrierCode": "UA",
+                                        "number": "1927"
+                                    },
+                                    "duration": "0DT4H19M"
+                                },
+                                "pricingDetailPerAdult": {
+                                    "travelClass": "ECONOMY",
+                                    "fareClass": "E",
+                                    "availability": 9,
+                                    "fareBasis": "EAA0AFEN"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "price": {
+                    "total": "478.02",
+                    "totalTaxes": "45.02"
+                },
+                "pricePerAdult": {
+                    "total": "478.02",
+                    "totalTaxes": "45.02"
+                }
+            }
+        ]
+    }
+]
