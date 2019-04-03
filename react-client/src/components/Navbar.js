@@ -158,7 +158,7 @@ class NavBar extends React.Component {
 
   render() {
     const { classes } = this.props;
-
+    const today = new Date();
     return (
       <div className={classes.root}>
         <AppBar position="fixed" className={classes.bar}>
@@ -211,7 +211,7 @@ class NavBar extends React.Component {
                   Date
                 </Typography>
               </div>
-              <InlineDatePicker InputProps={{disableUnderline: true, className: classes.dateInput}} format="MM/dd/yyyy" value={this.state.date} onChange={this.handleDateChange.bind(this)} />
+              <InlineDatePicker InputProps={{disableUnderline: true, className: classes.dateInput}} format="MM/dd/yyyy" value={this.state.date} minDate={today} onChange={this.handleDateChange.bind(this)} />
             </div>
             <Button color="inherit" className={classes.button} onClick={this.handleSubmit.bind(this)}>
               <SearchIcon />
