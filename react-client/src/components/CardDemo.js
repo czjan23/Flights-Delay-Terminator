@@ -1,28 +1,3 @@
-// import React, { Component } from 'react';
-// import Card from './Card';
-// import './CardPanel.css';
-
-// class CardPanel extends Component {
-//   render() {
-//     return (
-//       <div id='card-panel'>
-//       {this.props.flights.length === 1 && this.props.flights[0] === 'no match' ?
-//         <h2>No Match Results</h2>
-//         :
-//         this.props.flights.map((flight) => {
-//           return (
-//             <Card key={flight.id} flight={flight} />
-//           )
-//         })}
-//       </div>
-//     );
-//   }
-// }
-
-
-
-// export default CardPanel;
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
@@ -35,6 +10,7 @@ import Typography from '@material-ui/core/Typography';
 
 const styles = theme => ({
   root: {
+    position: 'relative',
     maxWidth: 860,
     left: '50%',
     marginLeft: -430,
@@ -44,8 +20,28 @@ const styles = theme => ({
     zIndex: -1,
     backgroundColor: theme.palette.background.paper,
   },
-  inline: {
-    display: 'inline',
+
+  noFlight: {
+    marginTop: '100px',
+    width: 860,
+    position: 'absolute',
+    left: '50%',
+    marginLeft: -430,
+    textAlign: 'center',
+    zIndex: -1,
+  },
+  
+  item: {
+    '&::after': {
+      position: 'absolute',
+      content: `''`,
+      display: 'block',
+      margin: '0 auto',
+      width: '100%',
+      borderBottom: '1px solid slateblue',
+      paddingTop: '70px',
+      left: '0',
+    }
   },
 });
 
@@ -59,24 +55,24 @@ class AlignItemsList extends React.Component {
     if (this.props.flights.length === 0) {
       return null;
     }
-
+    console.log(this.props.flights);
     return (
       <div id='card-panel'>
           {this.props.flights.length === 1 && this.props.flights[0] === 'no match' ?
-          <h2>No Match Results</h2>
+          <h2 className={classes.noFlight}>No Flight Found</h2>
           :
           <List className={classes.root}>
           {this.props.flights.map((flight, index) => {
             return (
-              <ListItem alignItems='flex-start' key={index} flight={flight}>
+              <ListItem className={classes.item} alignItems='flex-start' key={index} flight={flight}>
                 <ListItemAvatar>
-                  <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+                  <Avatar alt="carrier-img" src={require('../carrierImgs/' + flight.carrierCode + '.png')} />
                 </ListItemAvatar>
                 <ListItemText
                   primary={`Duration: ${flight.totalTime}`}
                   secondary={
                     <React.Fragment>
-                      <Typography component="span" className={classes.inline} color="textPrimary">
+                      <Typography component="span" color="textPrimary">
                         {`Price: ${flight.totalPrice}`}
                       </Typography>
                       {" — I'll be in your neighborhood doing errands this…"}
@@ -86,6 +82,9 @@ class AlignItemsList extends React.Component {
               </ListItem>
             )
           })}
+          <div>
+            <p>{`${this.props.flights.length} flights in total`}</p>
+          </div>
           </List>}
       </div>
     );
