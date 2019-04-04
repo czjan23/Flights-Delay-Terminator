@@ -1,4 +1,5 @@
 const abbrToFull = require('../data/carriers');
+const airlineList = ['5Y', 'AA', 'AS', 'B6', 'DL', 'F9', 'G4', 'HA', 'NK', 'UA'];
 
 const getTimeRange = (startTime, endTime) => {
   let start = new Date(startTime);
@@ -21,6 +22,24 @@ const getTime = (date) => {
   return new Date(date).toLocaleTimeString();
 }
 
+const getCarrierCode = (segments) => {
+  let firstSegmentAirline = segments[0].flightSegment.carrierCode;
+  console.log(segments);
+  if (!airlineList.includes(firstSegmentAirline)) {
+    return 'default';
+  }
+
+  if (segments.length > 1) {
+    for (let i = 1; i < segments.length; i++) {
+      if (segments[i].flightSegment.carrierCode !== firstSegmentAirline) {
+        return 'multi';
+      }
+    }
+  }
+
+  return firstSegmentAirline;
+}
+
 const process = (data) => {
   let flights = [];
   data.forEach(item => {
@@ -28,12 +47,13 @@ const process = (data) => {
     let segments = plan.services[0].segments;
     let totalPrice = plan.price.total;
     let totalTime = getTotalTime(segments);
+    let carrierCode = getCarrierCode(segments);
     let pieces = [];
     let intervals = [];
     segments.forEach((segment, index) => {
       pieces.push({
-        carrierFull: abbrToFull[segment.flightSegment.carrierCode],
-        carrierCode: segment.flightSegment.carrierCode,
+        segmentCarrierFull: abbrToFull[segment.flightSegment.carrierCode],
+        segmentCarrierCode: segment.flightSegment.carrierCode,
         number: segment.flightSegment.number,
         departureAirport: segment.flightSegment.departure.iataCode,
         arrivalAirport: segment.flightSegment.arrival.iataCode,
@@ -48,10 +68,12 @@ const process = (data) => {
     flights.push({
       totalPrice: totalPrice,
       totalTime: totalTime,
+      carrierCode: carrierCode,
       pieces: pieces,
       intervals: intervals
     });
   });
+  console.log(flights);
   return flights;
 }
 
