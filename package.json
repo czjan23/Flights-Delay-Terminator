@@ -1,0 +1,26 @@
+{
+  "name": "flights_delay_cracker",
+  "version": "1.0.0",
+  "description": "This is the repository for CSCE 678 final project.",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd react-client && npm start",
+    "server": "cd node-server && npm start",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/czjan23/Flights-Delay-Cracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/czjan23/Flights-Delay-Cracker/issues"
+  },
+  "homepage": "https://github.com/czjan23/Flights-Delay-Cracker#readme",
+  "dependencies": {
+    "concurrently": "^4.1.0"
+  }
+}
