@@ -9,7 +9,7 @@ const amadeus = new Amadeus({
 amadeus.shopping.flightOffers.get({
   origin : 'IAH',
   destination : 'SFO',
-  departureDate : '2019-04-02'
+  departureDate : '2019-05-10'
 })
 .then(res => {
   fs.writeFileSync('test.json', JSON.stringify(res.result['data']));
