@@ -14,6 +14,7 @@ import { withStyles } from '@material-ui/core/styles';
 const styles = theme => (
   {root: {
     width: '100%',
+    zIndex: 1
   },
   grow: {
     flexGrow: 1,
@@ -84,7 +85,7 @@ const styles = theme => (
     position: 'absolute'
   },
   bar: {
-    zIndex: 0
+    zIndex: 1
   }
 });
 
