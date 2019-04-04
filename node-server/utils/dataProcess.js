@@ -69,6 +69,7 @@ const process = (data) => {
       totalPrice: totalPrice,
       totalTime: totalTime,
       carrierCode: carrierCode,
+      carrierName: abbrToFull[carrierCode],
       pieces: pieces,
       intervals: intervals
     });

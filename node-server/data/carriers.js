@@ -15,7 +15,9 @@ const abbrToFull = {
     '5Y': 'Atlas Air',
     'FX': 'FedEx Express',
     'PO': 'Polar Air Cargo',
-    '5X': 'UPS Airlines'
+    '5X': 'UPS Airlines',
+    'multi': 'Multiple Airlines',
+    'default': ''
 };
 
 module.exports = abbrToFull;
