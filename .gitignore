@@ -84,3 +84,5 @@ typings/
 .dynamodb/
 
 .node/test.json
+
+.DS_Store
