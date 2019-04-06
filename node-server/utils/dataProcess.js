@@ -24,7 +24,6 @@ const getTime = (date) => {
 
 const getCarrierCode = (segments) => {
   let firstSegmentAirline = segments[0].flightSegment.carrierCode;
-  console.log(segments);
   if (!airlineList.includes(firstSegmentAirline)) {
     return 'default';
   }
@@ -74,7 +73,6 @@ const process = (data) => {
       intervals: intervals
     });
   });
-  console.log(flights);
   return flights;
 }
 

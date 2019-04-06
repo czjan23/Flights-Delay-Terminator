@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from './components/Navbar';
-// import CardPanel from './components/CardPanel';
-import CardDemo from './components/CardDemo';
+import FlightList from './components/FlightList';
 import { MuiPickersUtilsProvider } from 'material-ui-pickers';
 import DateFnsUtils from '@date-io/date-fns';
 
@@ -25,8 +24,7 @@ class App extends Component {
         <MuiPickersUtilsProvider utils={DateFnsUtils}>
           <NavBar handleSearch={this.handleSearch.bind(this)}  />
         </MuiPickersUtilsProvider>
-        {/* <CardPanel flights={this.state.flights} /> */}
-        <CardDemo flights={this.state.flights} />
+        <FlightList flights={this.state.flights} />
       </div>
     );
   }
