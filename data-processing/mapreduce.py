@@ -24,7 +24,7 @@ class DelayProcess(MRJob):
         if num_delay != 0:
             avg_delay_time = total_delay / num_delay
             
-        result = "%s - %s" % (delay_rate, avg_delay_time)
+        result = "%s_%s" % (delay_rate, avg_delay_time)
         yield flight, result
 
 if __name__ == '__main__':
