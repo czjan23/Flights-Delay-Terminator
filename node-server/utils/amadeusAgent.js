@@ -10,7 +10,8 @@ const amadeusQuery = (origin, destination, departureDate) => {
     origin : origin,
     destination : destination,
     departureDate : departureDate,
-    currency: 'USD'
+    currency: 'USD',
+    max: 50
   });
 }
 

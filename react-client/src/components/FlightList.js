@@ -35,6 +35,7 @@ const styles = theme => ({
 });
 
 class AlignItemsList extends React.Component {
+
   render() {
     const { classes } = this.props;
     if (this.props.flights.length === 0) {

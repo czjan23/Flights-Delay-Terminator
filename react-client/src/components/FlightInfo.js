@@ -27,7 +27,11 @@ const styles = theme => ({
   },
 
   intro: {
-    width: 180,
+    width: 260,
+  },
+
+  duration: {
+    width: 110,
   },
 
   rate: {
@@ -39,29 +43,13 @@ const styles = theme => ({
   },
 });
 
-function getSteps() {
-  return ['Select campaign settings', 'Create an ad group', 'Create an ad'];
-}
-
-function getStepContent(step) {
-  switch (step) {
-    case 0:
-      return 'Select campaign settings...';
-    case 1:
-      return 'What is an ad group anyways?';
-    case 2:
-      return 'This is the bit I really care about!';
-    default:
-      return 'Unknown step';
-  }
-}
-
 class FlightInfo extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
       expanded: false,
+      flightDelayDataList: []
     }
   }
 
@@ -77,21 +65,38 @@ class FlightInfo extends React.Component {
     return `${flight.intervals.length} Stops`;
   }
 
-  handleExpandClick = () => {
-    this.setState({expanded: !this.state.expanded})
-  };
+  handleExpandClick(flight) {
+    let header = 'http://localhost:3001/delayData?';
+    let tail = '';
+    for (let i in flight.pieces) {
+      let segment = flight.pieces[i];
+      let flightNum = `${segment.segmentCarrierCode}_${segment.number}`;
+      tail += 'flightNum=' + flightNum + '&';
+    }
+    let url = header + tail;
+    fetch(url)
+      .then(res => res.json())
+      .then(res => this.handleFetchDelayData(res));
+    this.setState({expanded: !this.state.expanded});
+  }
+
+  handleFetchDelayData(res) {
+    this.setState({
+      flightDelayDataList: res
+    })
+  }
 
   render() {
     const { classes } = this.props;
     const flight = this.props.flight;
     return (
       <div>
-        <ListItem className={classes.item} alignItems='flex-start'  button onClick={this.handleExpandClick.bind(this)}>
+        <ListItem className={classes.item} alignItems='flex-start'  button onClick={() => this.handleExpandClick(flight)}>
           <ListItemAvatar>
             <Avatar alt="carrier-img" src={require('../carrierImgs/' + flight.carrierCode + '.png')} />
           </ListItemAvatar>
           <ListItemText className={classes.intro}
-            primary={`Duration: ${flight.totalTime}`}
+            primary={`${flight.startTime} - ${flight.endTime}`}
             secondary={
               <React.Fragment>
                 <Typography component="span" color="textPrimary">
@@ -99,6 +104,17 @@ class FlightInfo extends React.Component {
                 </Typography>
               </React.Fragment>
             }
+            />
+            <ListItemText className={classes.duration}
+              inset 
+              primary={`${flight.totalTime}`} 
+              secondary={
+                <React.Fragment>
+                <Typography component="span" color="textPrimary">
+                  {`${flight.startAirport} - ${flight.endAirport}`}
+                </Typography>
+              </React.Fragment>
+              }
             />
             <ListItem>
               <ListItemText inset primary={`$${flight.totalPrice}`} />
@@ -108,7 +124,7 @@ class FlightInfo extends React.Component {
             </ListItem>
         </ListItem>
         <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
-          <FlightDropdown flight={flight}/>
+          <FlightDropdown flight={flight} flightDelayDataList={this.state.flightDelayDataList}/>
         </Collapse>
     </div>
     );
