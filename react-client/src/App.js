@@ -4,8 +4,6 @@ import FlightList from './components/FlightList';
 import { MuiPickersUtilsProvider } from 'material-ui-pickers';
 import DateFnsUtils from '@date-io/date-fns';
 
-import './App.css';
-
 class App extends Component {
   constructor(props) {
     super(props);
