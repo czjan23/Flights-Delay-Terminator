@@ -5,6 +5,7 @@ const cors = require('cors');
 const cities = require('./data/cities');
 const process = require('./utils/dataProcess');
 const amadeusQuery = require('./utils/amadeusAgent');
+const flightModel = require('./utils/mongoAgent');
 
 app.use(cors());
 
@@ -20,5 +21,13 @@ app.get('/flights', (req, res) => {
   })
   .catch(err => res.send(['no match']));
 });
+
+app.get('/delayData', (req, res) => {
+  let flightNumArray = req.query.flightNum;
+  flightModel.find({ code: {$in : flightNumArray}}, function (err, flightDelayDataArray) {
+      if (err) throw err;
+      res.send(flightDelayDataArray);
+    })
+})
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

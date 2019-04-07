@@ -59,6 +59,7 @@ class VerticalLinearStepper extends React.Component {
     const { classes } = this.props;
     const flightSegements = this.props.flight.pieces;
     const flightIntervals = this.props.flight.intervals;
+    const flightDelay = this.props.flightDelayDataList;
 
     return (
       <div className={classes.root}>
@@ -76,11 +77,20 @@ class VerticalLinearStepper extends React.Component {
                       <FlightLand />
                       <span className={classes.time}>{`${segment.arrivalTime} - ${segment.arrivalAirport}`}</span>
                     </div>
+                    {flightDelay[index] === undefined ? 
+                    null 
+                    : 
                     <div className={classes.delayData}>
-                      <p>Delay rate:</p>
-                      <p>Average Delay Time:</p>
-                      <p className={classes.alert}>Alert:</p> 
+                      <p>{`Delay rate: ${Math.round(flightDelay[index].delay_rate * 100)}%`}</p>
+                      <p>{`Average Delay Time: ${Math.round(flightDelay[index].avg_delay_time)}m`}</p>
+                      {index < flightIntervals.length && 
+                        flightDelay[index].avg_delay_time > flightIntervals[index] ?
+                        <p className={classes.alert}>Alert: If the flight is delayed, you may miss the next flight.</p> 
+                        :
+                        null
+                      }
                     </div>
+                    }
               </div>
 
               {index < flightIntervals.length ? 

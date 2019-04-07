@@ -19,7 +19,8 @@ const getInterval = (prev, next) => {
 }
 
 const getTime = (date) => {
-  return new Date(date).toLocaleTimeString();
+  const time = new Date(date).toLocaleTimeString();
+  return time.substring(time.length - 6, 0) + time.substring(time.length - 3, time.length);
 }
 
 const getCarrierCode = (segments) => {
@@ -67,6 +68,10 @@ const process = (data) => {
     flights.push({
       totalPrice: totalPrice,
       totalTime: totalTime,
+      startTime: pieces[0].departureTime,
+      endTime: pieces[pieces.length - 1].arrivalTime,
+      startAirport: pieces[0].departureAirport,
+      endAirport: pieces[pieces.length - 1].arrivalAirport,
       carrierCode: carrierCode,
       carrierName: abbrToFull[carrierCode],
       pieces: pieces,
