@@ -5,6 +5,7 @@ import FlightLand from '@material-ui/icons/FlightLand';
 import FlightTakeOff from '@material-ui/icons/FlightTakeoff';
 import EventSeat from '@material-ui/icons/EventSeat';
 import Typography from '@material-ui/core/Typography';
+import FlightDelay from './FlightDelay';
 
 const styles = theme => ({
   root: {
@@ -34,16 +35,6 @@ const styles = theme => ({
     display: 'inline-block',
   },
 
-  delayData: {
-    display: 'inline-block',
-    position: 'absolute',
-  }, 
-
-  alert: {
-    fontSize: 14,
-    color: 'red',
-  },
-
   layout: {
     width: '90%',
     margin: '10px auto',
@@ -59,7 +50,6 @@ class VerticalLinearStepper extends React.Component {
     const { classes } = this.props;
     const flightSegements = this.props.flight.pieces;
     const flightIntervals = this.props.flight.intervals;
-    const flightDelay = this.props.flightDelayDataList;
 
     return (
       <div className={classes.root}>
@@ -77,20 +67,7 @@ class VerticalLinearStepper extends React.Component {
                       <FlightLand />
                       <span className={classes.time}>{`${segment.arrivalTime} - ${segment.arrivalAirport}`}</span>
                     </div>
-                    {flightDelay[index] === undefined ? 
-                    null 
-                    : 
-                    <div className={classes.delayData}>
-                      <p>{`Delay rate: ${Math.round(flightDelay[index].delay_rate * 100)}%`}</p>
-                      <p>{`Average Delay Time: ${Math.round(flightDelay[index].avg_delay_time)}m`}</p>
-                      {index < flightIntervals.length && 
-                        flightDelay[index].avg_delay_time > flightIntervals[index] ?
-                        <p className={classes.alert}>Alert: If the flight is delayed, you may miss the next flight.</p> 
-                        :
-                        null
-                      }
-                    </div>
-                    }
+                    <FlightDelay segment={segment} canAlert={index < flightIntervals.length} nextInterval={flightIntervals[index]}/>
               </div>
 
               {index < flightIntervals.length ? 

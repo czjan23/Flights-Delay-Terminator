@@ -40,8 +40,10 @@ const getCarrierCode = (segments) => {
   return firstSegmentAirline;
 }
 
+
 const process = (data) => {
   let flights = [];
+  let segmentCount = 0;
   data.forEach(item => {
     let plan = item.offerItems[0];
     let segments = plan.services[0].segments;
@@ -51,6 +53,7 @@ const process = (data) => {
     let pieces = [];
     let intervals = [];
     segments.forEach((segment, index) => {
+      segmentCount++;
       pieces.push({
         segmentCarrierFull: abbrToFull[segment.flightSegment.carrierCode],
         segmentCarrierCode: segment.flightSegment.carrierCode,
@@ -59,6 +62,9 @@ const process = (data) => {
         arrivalAirport: segment.flightSegment.arrival.iataCode,
         departureTime: getTime(segment.flightSegment.departure.at),
         arrivalTime: getTime(segment.flightSegment.arrival.at),
+        directDelay: {},
+        estimateFromToDelay: {},
+        estimateCarrierDelay: {},
         duration: getTimeRange(segment.flightSegment.departure.at, segment.flightSegment.arrival.at)
       });
       if (index !== segments.length - 1) {
@@ -78,7 +84,12 @@ const process = (data) => {
       intervals: intervals
     });
   });
-  return flights;
+
+  const flightsData = {
+    flights: flights,
+    segmentCount: segmentCount,
+  }
+  return flightsData;
 }
 
 module.exports = process;
