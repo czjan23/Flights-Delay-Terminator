@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography';
 
 const styles = theme => ({ 
   delayData: {
+    width: 400,
     display: 'inline-block',
     position: 'absolute',
   }, 
@@ -21,16 +22,20 @@ class FlightDelay extends React.Component {
     if (!canAlert) {
       return false;
     }
+    let interalArray = interval.split(/['h','m']+/);
+    let intervalHour = parseInt(interalArray[0]);
+    let intervalMin = parseInt(interalArray[1]);
+    let intervalTotal = intervalHour * 60 + intervalMin;
 
     if (directDelay !== null && directDelay !== undefined) {
-      return directDelay.avg_delay_time > interval - 60;
+      return directDelay.avg_delay_time > intervalTotal - 60;
     }
 
     if (fromToDelay !== null && fromToDelay !== undefined) {
-      return fromToDelay.avg_delay_time > interval - 60;
+      return fromToDelay.avg_delay_time > intervalTotal - 60;
     }
 
-    return carrierDelay.avg_delay_time > interval - 60;
+    return carrierDelay.avg_delay_time > intervalTotal - 60;
   }
 
   render() {
