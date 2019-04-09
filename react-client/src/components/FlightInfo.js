@@ -49,7 +49,6 @@ class FlightInfo extends React.Component {
     super(props);
     this.state = {
       expanded: false,
-      flightDelayDataList: []
     }
   }
 
@@ -66,24 +65,7 @@ class FlightInfo extends React.Component {
   }
 
   handleExpandClick(flight) {
-    let header = 'http://localhost:3001/delayData?';
-    let tail = '';
-    for (let i in flight.pieces) {
-      let segment = flight.pieces[i];
-      let flightNum = `${segment.segmentCarrierCode}_${segment.number}`;
-      tail += 'flightNum=' + flightNum + '&';
-    }
-    let url = header + tail;
-    fetch(url)
-      .then(res => res.json())
-      .then(res => this.handleFetchDelayData(res));
     this.setState({expanded: !this.state.expanded});
-  }
-
-  handleFetchDelayData(res) {
-    this.setState({
-      flightDelayDataList: res
-    })
   }
 
   render() {
@@ -91,7 +73,7 @@ class FlightInfo extends React.Component {
     const flight = this.props.flight;
     return (
       <div>
-        <ListItem className={classes.item} alignItems='flex-start'  button onClick={() => this.handleExpandClick(flight)}>
+        <ListItem className={classes.item} alignItems='flex-start'  button onClick={this.handleExpandClick.bind(this)}>
           <ListItemAvatar>
             <Avatar alt="carrier-img" src={require('../carrierImgs/' + flight.carrierCode + '.png')} />
           </ListItemAvatar>
@@ -124,7 +106,7 @@ class FlightInfo extends React.Component {
             </ListItem>
         </ListItem>
         <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
-          <FlightDropdown flight={flight} flightDelayDataList={this.state.flightDelayDataList}/>
+          <FlightDropdown flight={flight} />
         </Collapse>
     </div>
     );

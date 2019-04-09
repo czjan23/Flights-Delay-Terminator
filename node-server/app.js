@@ -5,7 +5,7 @@ const cors = require('cors');
 const cities = require('./data/cities');
 const process = require('./utils/dataProcess');
 const amadeusQuery = require('./utils/amadeusAgent');
-const flightModel = require('./utils/mongoAgent');
+const DBModels = require('./utils/mongoAgent');
 
 app.use(cors());
 
@@ -15,19 +15,41 @@ app.get('/cities', (req, res) => {
 
 app.get('/flights', (req, res) => {
   amadeusQuery(req.query.origin, req.query.destination, req.query.departureDate)
-  .then(res => JSON.stringify(process(res.result['data'])))
-  .then(flights => {
-    res.send(flights);
+  .then(res => process(res.result['data']))
+  .then(flightsData => {
+    let flights = flightsData.flights;
+    let segmentCount = flightsData.segmentCount;
+    let count = 0;
+    console.log('intervals');
+    Object.keys(flights).map(function(key1) {
+      let pieces = flights[key1].pieces;
+      console.log(flights[key1].intervals);
+      Object.keys(pieces).map(function(key2) {
+        let segment = pieces[key2];
+        let flightNumber = `${segment.segmentCarrierCode}_${segment.number}`;
+        let from_to = `${segment.departureAirport}_${segment.arrivalAirport}`;
+        DBModels.FlightModel.findOne({ code: flightNumber }, function (err, flightDelayData) {
+          if (err) throw err;
+          segment.directDelay = flightDelayData;
+          DBModels.FromtoModel.findOne({ from_to: from_to }, function (err, fromToDelayData) {
+            if (err) throw err;
+            segment.estimateFromToDelay = fromToDelayData;
+            DBModels.CarrierModel.findOne({ code: segment.segmentCarrierCode }, function (err, carrierDelay) {
+              if (err) throw err;
+              segment.estimateCarrierDelay = carrierDelay;
+              pieces[key2] = segment;
+              flights[key1].pieces = pieces;
+              count++;
+              if (count === segmentCount) {
+                res.send(JSON.stringify(flights));
+              }
+            });
+          });
+        });
+      });
+    })
   })
   .catch(err => res.send(['no match']));
 });
-
-app.get('/delayData', (req, res) => {
-  let flightNumArray = req.query.flightNum;
-  flightModel.find({ code: {$in : flightNumArray}}, function (err, flightDelayDataArray) {
-      if (err) throw err;
-      res.send(flightDelayDataArray);
-    })
-})
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

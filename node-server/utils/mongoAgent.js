@@ -7,6 +7,26 @@ const FlightSchema = new mongoose.Schema({
     avg_delay_time: Number
 });
 
-const FlightModel = mongoose.model("FlightModel", FlightSchema);
+const CarrierSchema = new mongoose.Schema({
+    code: String,
+    delay_rate: Number,
+    avg_delay_time: Number
+});
 
-module.exports = FlightModel;
+const FromtoSchema = new mongoose.Schema({
+    from_to: String,
+    delay_rate: Number,
+    avg_delay_time: Number
+});
+
+const FlightModel = mongoose.model("FlightModel", FlightSchema);
+const CarrierModel = mongoose.model("CarrierModel", CarrierSchema);
+const FromtoModel = mongoose.model("FromtoModel", FromtoSchema);
+
+const DBModels = {
+    FlightModel: FlightModel,
+    CarrierModel: CarrierModel,
+    FromtoModel: FromtoModel,
+}
+
+module.exports = DBModels;
