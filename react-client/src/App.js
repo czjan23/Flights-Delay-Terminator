@@ -15,7 +15,6 @@ class App extends Component {
   }
 
   handleSearch(flights) {
-    console.log(flights[1]);
     this.setState({flights: flights});
   }
 
