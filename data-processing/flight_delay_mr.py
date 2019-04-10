@@ -1,6 +1,6 @@
 from mrjob.job import MRJob
 
-class DelayProcess(MRJob):
+class FlightDelayProcess(MRJob):
     def mapper(self, key, line):
         (flight, delay) = line.split()
         yield flight, delay
@@ -28,4 +28,4 @@ class DelayProcess(MRJob):
         yield flight, result
 
 if __name__ == '__main__':
-    DelayProcess.run()
+    FlightDelayProcess.run()
