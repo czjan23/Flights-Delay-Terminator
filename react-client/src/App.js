@@ -4,6 +4,8 @@ import FlightList from './components/FlightList';
 import { MuiPickersUtilsProvider } from 'material-ui-pickers';
 import DateFnsUtils from '@date-io/date-fns';
 
+import store from './store';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -13,6 +15,7 @@ class App extends Component {
   }
 
   handleSearch(flights) {
+    console.log(flights[1]);
     this.setState({flights: flights});
   }
 
@@ -28,4 +31,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export {App, store};

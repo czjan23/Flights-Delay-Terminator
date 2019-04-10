@@ -20,10 +20,8 @@ app.get('/flights', (req, res) => {
     let flights = flightsData.flights;
     let segmentCount = flightsData.segmentCount;
     let count = 0;
-    console.log('intervals');
     Object.keys(flights).map(function(key1) {
       let pieces = flights[key1].pieces;
-      console.log(flights[key1].intervals);
       Object.keys(pieces).map(function(key2) {
         let segment = pieces[key2];
         let flightNumber = `${segment.segmentCarrierCode}_${segment.number}`;
