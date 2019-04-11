@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Progress from './components/Progress';
 import NavBar from './components/Navbar';
 import FlightList from './components/FlightList';
 import { MuiPickersUtilsProvider } from 'material-ui-pickers';
@@ -10,12 +11,15 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      hasNoSearch: true,
       flights: []
     };
   }
 
   handleSearch(flights) {
-    this.setState({flights: flights});
+    this.setState({
+      flights: flights
+    });
   }
 
   render() {
@@ -24,6 +28,7 @@ class App extends Component {
         <MuiPickersUtilsProvider utils={DateFnsUtils}>
           <NavBar handleSearch={this.handleSearch.bind(this)}  />
         </MuiPickersUtilsProvider>
+        <Progress />
         <FlightList flights={this.state.flights} />
       </div>
     );
