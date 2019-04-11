@@ -17,9 +17,10 @@ class App extends Component {
   }
 
   handleSearch(flights) {
-    this.setState({
-      flights: flights
-    });
+    console.log(flights.map(flight => {
+      return flight.score;
+    }));
+    this.setState({flights: flights});
   }
 
   render() {

@@ -3,7 +3,7 @@ const app = express();
 const port = 3001;
 const cors = require('cors');
 const cities = require('./data/cities');
-const process = require('./utils/dataProcess');
+const dataProcess = require('./utils/dataProcess');
 const amadeusQuery = require('./utils/amadeusAgent');
 const DBModels = require('./utils/mongoAgent');
 
@@ -15,7 +15,7 @@ app.get('/cities', (req, res) => {
 
 app.get('/flights', (req, res) => {
   amadeusQuery(req.query.origin, req.query.destination, req.query.departureDate)
-  .then(res => process(res.result['data']))
+  .then(res => dataProcess.process(res.result['data']))
   .then(flightsData => {
     let flights = flightsData.flights;
     let segmentCount = flightsData.segmentCount;
@@ -39,6 +39,7 @@ app.get('/flights', (req, res) => {
               flights[key1].pieces = pieces;
               count++;
               if (count === segmentCount) {
+                flights = dataProcess.addScore(flights);
                 res.send(JSON.stringify(flights));
               }
             });

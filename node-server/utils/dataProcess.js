@@ -1,5 +1,9 @@
 const abbrToFull = require('../data/carriers');
 const airlineList = ['5Y', 'AA', 'AS', 'B6', 'DL', 'F9', 'G4', 'HA', 'NK', 'UA'];
+const l = 0;
+const h = 10;
+const w1 = 1;
+const w2 = -1;
 
 const getTimeRange = (startTime, endTime) => {
   let start = new Date(startTime);
@@ -39,7 +43,6 @@ const getCarrierCode = (segments) => {
 
   return firstSegmentAirline;
 }
-
 
 const process = (data) => {
   let flights = [];
@@ -92,4 +95,67 @@ const process = (data) => {
   return flightsData;
 }
 
-module.exports = process;
+const getSubVal = (interval, piece) => {
+  let hour_minute = interval.split(" ");
+  let hour = hour_minute[0];
+  hour = hour.slice(0, hour.length - 1);
+  hour = +hour;
+  let minute = hour_minute[1];
+  minute = minute.slice(0, minute.length - 1);
+  minute = +minute;
+  let intervalDuration = hour * 60 + minute;
+
+  let delayObj = piece.estimateCarrierDelay;
+  if (piece.directDelay !== null) {
+    delayObj = piece.directDelay;
+  } else if (piece.estimateFromToDelay !== null) {
+    delayObj = piece.estimateFromToDelay;
+  }
+  let pieceDuration = delayObj.avg_delay_time;
+  let pieceProb = delayObj.delay_rate;
+
+  return (intervalDuration - pieceDuration) / pieceProb;
+};
+
+const getVal1 = (flight) => {
+  let val = 0;
+  for (let i = 0; i < flight.intervals.length; i++) {
+    val += getSubVal(flight.intervals[i], flight.pieces[i]);
+  }
+  return val * w1;
+};
+
+const getVal2 = (piece) => {
+  let delayObj = piece.estimateCarrierDelay;
+  if (piece.directDelay !== null) {
+    delayObj = piece.directDelay;
+  } else if (piece.estimateFromToDelay !== null) {
+    delayObj = piece.estimateFromToDelay;
+  }
+  let pieceDuration = delayObj.avg_delay_time;
+  let pieceProb = delayObj.delay_rate;
+
+  return pieceDuration * pieceProb * w2;
+};
+
+const getScore = (flight) => {
+  let val = getVal1(flight) + getVal2(flight.pieces[flight.pieces.length - 1]);
+  if (val < l) {
+    val = l;
+  } else if (val > h) {
+    val = h;
+  }
+  return val;
+};
+
+const addScore = (flights) => {
+  flights.forEach(flight => {
+    flight.score = getScore(flight);
+  });
+  return flights;
+}
+
+module.exports = {
+  process,
+  addScore
+}
