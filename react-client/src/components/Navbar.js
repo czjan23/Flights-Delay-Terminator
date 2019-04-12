@@ -11,6 +11,8 @@ import AutoCompeletePanel from './AutoCompeletePanel';
 import { fade } from '@material-ui/core/styles/colorManipulator';
 import { withStyles } from '@material-ui/core/styles';
 
+import store from '../store';
+
 const styles = theme => (
   {root: {
     width: '100%',
@@ -146,6 +148,7 @@ class NavBar extends React.Component {
   }
 
   handleSubmit() {
+    this.props.handleLoading();
     let departureDate = this.getDay();
     let origin = this.getCode(this.state.from);
     let destination = this.getCode(this.state.to);
@@ -154,7 +157,10 @@ class NavBar extends React.Component {
     let url = header + tail;
     fetch(url)
       .then(res => res.json())
-      .then(res => this.props.handleSearch(res));
+      .then(res => {
+        store.dispatch({type: 'search', loading: false});
+        this.props.handleSearch(res)
+      });
   }
 
   render() {

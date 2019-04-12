@@ -4,6 +4,11 @@ import { withStyles } from '@material-ui/core/styles';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
 const styles = theme => ({
+  text: {
+    marginTop: 100,
+    textAlign: 'center',
+  },
+
   progress: {
     position: 'absolute',
     left: '50%',
@@ -11,17 +16,24 @@ const styles = theme => ({
   },
 });
 
-function CircularIndeterminate(props) {
-  const { classes } = props;
-  return (
-    <div>
-      <CircularProgress className={classes.progress} color="primary" />
-    </div>
-  );
+class Progress extends React.Component {
+
+  render() {
+    const { classes } = this.props;
+
+    return (
+      <div>
+        {this.props.noneSearch ? 
+        <h3 className={classes.text}>Please input your travel information above</h3> : 
+        <CircularProgress className={classes.progress} color="primary" />}
+      </div>
+    );
+  }
+  
 }
 
-CircularIndeterminate.propTypes = {
+Progress.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(CircularIndeterminate);
+export default withStyles(styles)(Progress);

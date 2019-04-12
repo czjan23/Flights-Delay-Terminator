@@ -11,26 +11,46 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      hasNoSearch: true,
-      flights: []
+      noneSearch: true,
+      flights: [],
+      loading: true,
     };
   }
 
+  handleLoading() {
+    this.setState({
+      loading: store.getState().loading.loading
+    })
+  }
+
   handleSearch(flights) {
-    console.log(flights.map(flight => {
-      return flight.score;
-    }));
-    this.setState({flights: flights});
+    // console.log(flights.map(flight => {
+    //   return flight.score;
+    // }));
+    this.setState({
+      noneSearch: false,
+      loading: store.getState().loading.loading,
+      flights: flights
+    });
   }
 
   render() {
+    const loading = this.state.loading;
+    let flightList;
+
+    if (loading) {
+      flightList = <Progress noneSearch={this.state.noneSearch} />;
+    } else {
+      flightList = <FlightList flights={this.state.flights} />;
+    }
+    
+
     return (
       <div>
         <MuiPickersUtilsProvider utils={DateFnsUtils}>
-          <NavBar handleSearch={this.handleSearch.bind(this)}  />
+          <NavBar handleLoading={this.handleLoading.bind(this)} handleSearch={this.handleSearch.bind(this)}  />
         </MuiPickersUtilsProvider>
-        <Progress />
-        <FlightList flights={this.state.flights} />
+        {flightList}
       </div>
     );
   }
