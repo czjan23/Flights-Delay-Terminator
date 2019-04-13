@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import InitialPage from './components/InitialPage';
 import Progress from './components/Progress';
 import NavBar from './components/Navbar';
 import FlightList from './components/FlightList';
@@ -13,13 +14,14 @@ class App extends Component {
     this.state = {
       noneSearch: true,
       flights: [],
-      loading: true,
+      loading: false,
     };
   }
 
   handleLoading() {
     this.setState({
-      loading: store.getState().loading.loading
+      noneSearch: false,
+      loading: true
     })
   }
 
@@ -28,7 +30,6 @@ class App extends Component {
     //   return flight.score;
     // }));
     this.setState({
-      noneSearch: false,
       loading: store.getState().loading.loading,
       flights: flights
     });
@@ -36,8 +37,9 @@ class App extends Component {
 
   render() {
     const loading = this.state.loading;
+    const noneSearch = this.state.noneSearch;
     let flightList;
-
+    
     if (loading) {
       flightList = <Progress noneSearch={this.state.noneSearch} />;
     } else {
@@ -50,6 +52,7 @@ class App extends Component {
         <MuiPickersUtilsProvider utils={DateFnsUtils}>
           <NavBar handleLoading={this.handleLoading.bind(this)} handleSearch={this.handleSearch.bind(this)}  />
         </MuiPickersUtilsProvider>
+        {noneSearch ? <InitialPage /> : null}
         {flightList}
       </div>
     );

@@ -4,10 +4,6 @@ import { withStyles } from '@material-ui/core/styles';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
 const styles = theme => ({
-  text: {
-    marginTop: 100,
-    textAlign: 'center',
-  },
 
   progress: {
     position: 'absolute',
@@ -23,9 +19,7 @@ class Progress extends React.Component {
 
     return (
       <div>
-        {this.props.noneSearch ? 
-        <h3 className={classes.text}>Please input your travel information above</h3> : 
-        <CircularProgress className={classes.progress} color="primary" />}
+        <CircularProgress className={classes.progress} color="primary" />
       </div>
     );
   }

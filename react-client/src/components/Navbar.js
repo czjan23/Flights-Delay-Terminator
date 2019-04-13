@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types';
+import Avatar from '@material-ui/core/Avatar';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -18,6 +19,12 @@ const styles = theme => (
     width: '100%',
     zIndex: 1
   },
+
+  bigAvatar: {
+    margin: 10,
+    borderRadius: 0
+  },
+
   grow: {
     flexGrow: 1,
   },
@@ -170,8 +177,9 @@ class NavBar extends React.Component {
       <div className={classes.root}>
         <AppBar position="fixed" className={classes.bar}>
           <Toolbar>
+            <Avatar alt='logo' src={require('../img/logo.png')} className={classes.bigAvatar} />
             <Typography className={classes.title} variant="h6" color="inherit" noWrap>
-              Flight Delay Terminator
+              Flight Plan Assistant
             </Typography>
             <div className={classes.grow} />
             <div className={classes.inputArea}>
