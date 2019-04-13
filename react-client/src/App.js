@@ -14,29 +14,27 @@ class App extends Component {
     this.state = {
       noneSearch: true,
       flights: [],
-      loading: false,
     };
   }
 
   handleLoading() {
+    store.dispatch({type: 'search', loading: true})
     this.setState({
       noneSearch: false,
-      loading: true
     })
   }
 
   handleSearch(flights) {
-    // console.log(flights.map(flight => {
-    //   return flight.score;
-    // }));
+    console.log(flights.map(flight => {
+      return flight.score;
+    }));
     this.setState({
-      loading: store.getState().loading.loading,
       flights: flights
     });
   }
 
   render() {
-    const loading = this.state.loading;
+    const loading = store.getState().loading.loading;
     const noneSearch = this.state.noneSearch;
     let flightList;
     

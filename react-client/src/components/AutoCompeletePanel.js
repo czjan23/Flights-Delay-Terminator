@@ -38,16 +38,17 @@ class AutoCompeletePanel extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps.input === this.props.input) {
+    let input = nextProps.input.trim();
+    if (input === this.props.input) {
       return;
     }
-    if (nextProps.input === '') {
+    if (input === '') {
       this.setState({suggestions: [], hasSuggestion: false});
       return;
     }
     let list = [];
     this.state.base.forEach((suggestion) => {
-      if (suggestion.toLowerCase().indexOf(nextProps.input.toLowerCase()) !== -1) {
+      if (suggestion.toLowerCase().indexOf(input.toLowerCase()) !== -1) {
         list.push(suggestion);
       }
     });
@@ -55,7 +56,7 @@ class AutoCompeletePanel extends React.Component {
       this.setState({suggestions: [], hasSuggestion: false})
       return;
     }
-    if (list.length === 1 && list[0] === nextProps.input) {
+    if (list.length === 1 && list[0] === input) {
       return;
     }
     this.setState({suggestions: list, hasSuggestion: true});

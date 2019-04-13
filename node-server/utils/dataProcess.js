@@ -1,9 +1,10 @@
 const abbrToFull = require('../data/carriers');
 const airlineList = ['5Y', 'AA', 'AS', 'B6', 'DL', 'F9', 'G4', 'HA', 'NK', 'UA'];
-const l = 0;
-const h = 10;
-const w1 = 1;
+const l = 20;
+const h = 100;
+const w1 = -300;
 const w2 = -1;
+const base = 100; 
 
 const getTimeRange = (startTime, endTime) => {
   let start = new Date(startTime);
@@ -55,6 +56,12 @@ const process = (data) => {
     let carrierCode = getCarrierCode(segments);
     let pieces = [];
     let intervals = [];
+    for (let i in segments) {
+      let segmentCarrierCode = segments[i].flightSegment.carrierCode;
+      if (!airlineList.includes(segmentCarrierCode)) {
+        return;
+      }
+    }
     segments.forEach((segment, index) => {
       segmentCount++;
       pieces.push({
@@ -114,7 +121,7 @@ const getSubVal = (interval, piece) => {
   let pieceDuration = delayObj.avg_delay_time;
   let pieceProb = delayObj.delay_rate;
 
-  return (intervalDuration - pieceDuration) / pieceProb;
+  return (intervalDuration - pieceDuration) <= 0 ? 0.133 : pieceProb / (intervalDuration - pieceDuration);
 };
 
 const getVal1 = (flight) => {
@@ -139,7 +146,7 @@ const getVal2 = (piece) => {
 };
 
 const getScore = (flight) => {
-  let val = getVal1(flight) + getVal2(flight.pieces[flight.pieces.length - 1]);
+  let val = getVal1(flight) + getVal2(flight.pieces[flight.pieces.length - 1]) + base;
   if (val < l) {
     val = l;
   } else if (val > h) {

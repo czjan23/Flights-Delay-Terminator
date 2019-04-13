@@ -46,9 +46,9 @@ const lookUpTab = {
 
 class AlignItemsList extends React.Component {
 
-  componentDidMount() {
-    store.dispatch({type: 'search', loading: true});
-  }
+  // componentDidMount() {
+  //   store.dispatch({type: 'search', loading: true});
+  // }
 
   getTime(time) {
     let parts = time.split(" ");

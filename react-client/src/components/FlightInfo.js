@@ -101,7 +101,8 @@ class FlightInfo extends React.Component {
             <ListItem>
               <ListItemText inset primary={`$${flight.totalPrice}`} />
               <ListItemText className={classes.rate} inset primary={this.getStops(flight)} />
-              <ListItemText inset primary={`${flight.score}`} />
+              <ListItemText inset primary={`${flight.score.toFixed(1)}`} />
+              
               {this.state.expanded ? <ExpandLess /> : <ExpandMore />}
             </ListItem>
         </ListItem>
