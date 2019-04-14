@@ -56,7 +56,7 @@ class VerticalLinearStepper extends React.Component {
         {flightSegements.map((segment, index) => (
             <div key={index}>
               
-              <p>{`${segment.segmentCarrierCode} ${segment.number}`}</p>
+              <p>{`${segment.segmentCarrierCode} ${segment.number} - ${segment.departureDate}`}</p>
                   <div className={classes.segment}>
                     <div className={classes.flightData}>
                       <FlightTakeOff />

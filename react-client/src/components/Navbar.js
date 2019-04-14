@@ -158,10 +158,8 @@ class NavBar extends React.Component {
     if (store.getState().loading.loading) {
       return;
     }
-    console.log(store.getState().loading.loading);
     store.dispatch({type: 'clearFilter'})
     this.props.handleLoading();
-    console.log(store.getState().loading.loading);
     let departureDate = this.getDay();
     let origin = this.getCode(this.state.from);
     let destination = this.getCode(this.state.to);

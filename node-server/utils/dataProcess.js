@@ -1,5 +1,6 @@
 const abbrToFull = require('../data/carriers');
 const airlineList = ['5Y', 'AA', 'AS', 'B6', 'DL', 'F9', 'G4', 'HA', 'NK', 'UA'];
+const numToMonth = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 const l = 20;
 const h = 100;
 const w1 = -300;
@@ -26,6 +27,15 @@ const getInterval = (prev, next) => {
 const getTime = (date) => {
   const time = new Date(date).toLocaleTimeString();
   return time.substring(time.length - 6, 0) + time.substring(time.length - 3, time.length);
+}
+
+const getDepartureDate = (date) => {
+  const rawDate = new Date(date);
+  const dd = String(rawDate.getDate());
+  const mm = numToMonth[rawDate.getMonth()];
+  const yyyy = rawDate.getFullYear();
+
+  return mm + ' ' + dd + ', ' + yyyy;
 }
 
 const getCarrierCode = (segments) => {
@@ -72,6 +82,7 @@ const process = (data) => {
         arrivalAirport: segment.flightSegment.arrival.iataCode,
         departureTime: getTime(segment.flightSegment.departure.at),
         arrivalTime: getTime(segment.flightSegment.arrival.at),
+        departureDate: getDepartureDate(segment.flightSegment.departure.at),
         directDelay: {},
         estimateFromToDelay: {},
         estimateCarrierDelay: {},
@@ -152,7 +163,7 @@ const getScore = (flight) => {
   } else if (val > h) {
     val = h;
   }
-  return val;
+  return val / 10;
 };
 
 const addScore = (flights) => {
