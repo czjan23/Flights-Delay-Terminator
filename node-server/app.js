@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-const port = 3001;
+// const port = 3001;
+const port = process.env.PORT || 3001;
 const cors = require('cors');
 const cities = require('./data/cities');
 const dataProcess = require('./utils/dataProcess');
@@ -51,4 +52,4 @@ app.get('/flights', (req, res) => {
   .catch(err => res.send(['no match']));
 });
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port, () => console.log(`Server listening on port ${port}!`));
