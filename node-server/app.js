@@ -1,14 +1,13 @@
 const express = require('express');
 const app = express();
-// const port = 3001;
-const port = process.env.PORT || 3001;
-const cors = require('cors');
+const port = process.env.PORT || 3000;
+const path = require('path');
 const cities = require('./data/cities');
 const dataProcess = require('./utils/dataProcess');
 const amadeusQuery = require('./utils/amadeusAgent');
 const DBModels = require('./utils/mongoAgent');
 
-app.use(cors());
+app.use(express.static(__dirname + '/build'));
 
 app.get('/cities', (req, res) => {
   res.send(cities);
@@ -50,6 +49,10 @@ app.get('/flights', (req, res) => {
     })
   })
   .catch(err => res.send(['no match']));
+});
+
+app.get('*', function (request, response){
+  response.sendFile(path.resolve(__dirname, 'build', 'index.html'))
 });
 
 app.listen(port, () => console.log(`Server listening on port ${port}!`));
