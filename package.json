@@ -4,6 +4,7 @@
   "description": "This is the repository for CSCE 678 final project.",
   "main": "index.js",
   "scripts": {
+    "postinstall": "cd node-server && npm install",
     "server": "cd node-server && npm start",
     "start": "npm run server",
     "test": "echo \"Error: no test specified\" && exit 1"
