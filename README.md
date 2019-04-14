@@ -1,4 +1,4 @@
-# CSCE 6708 - Final Project - Flight Plan Assistant
+# CSCE 678 - Final Project - Flight Plan Assistant
 
 ## About our project
 This is a web application helps people take care of delay issues when taking flights.
