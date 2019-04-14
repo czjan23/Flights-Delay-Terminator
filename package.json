@@ -4,9 +4,8 @@
   "description": "This is the repository for CSCE 678 final project.",
   "main": "index.js",
   "scripts": {
-    "client": "cd react-client && npm start",
     "server": "cd node-server && npm start",
-    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "npm run server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

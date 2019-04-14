@@ -165,7 +165,7 @@ class NavBar extends React.Component {
     let departureDate = this.getDay();
     let origin = this.getCode(this.state.from);
     let destination = this.getCode(this.state.to);
-    let header = 'http://localhost:3001/flights?';
+    let header = window.location.href + 'flights?';
     let tail = 'origin=' + origin + '&destination=' + destination + '&departureDate=' + departureDate;
     let url = header + tail;
     fetch(url)

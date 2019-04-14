@@ -29,7 +29,7 @@ class AutoCompeletePanel extends React.Component {
   }
 
   componentWillMount() {
-    let url = 'http://localhost:3001/cities';
+    let url = window.location.href + 'cities';
     fetch(url)
       .then(res => res.json())
       .then(res => {
