@@ -21,8 +21,6 @@
   },
   "homepage": "https://github.com/czjan23/Flights-Delay-Cracker#readme",
   "dependencies": {
-    "concurrently": "^4.1.0",
-    "i": "^0.3.6",
-    "npm": "^6.9.0"
+    "concurrently": "^4.1.0"
   }
 }
