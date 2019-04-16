@@ -11,6 +11,7 @@
     "material-ui-pickers": "^2.2.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-rating": "^1.6.2",
     "react-scripts": "2.1.8",
     "react-select": "^2.4.2",
     "redux": "^4.0.1"

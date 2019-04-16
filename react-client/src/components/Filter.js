@@ -14,8 +14,16 @@ import store from '../store';
 
 const styles = theme => ({
   root: {
+    width: 1100,
+    left: '50%',
+    marginLeft: -550,
+    marginTop: 100,
+    border: '2px groove slateblue',
+    borderRadius: 10,
+    zIndex: 0,
     display: 'flex',
     flexWrap: 'wrap',
+    position: 'relative',
   },
   formControl: {
     margin: theme.spacing.unit,
@@ -32,8 +40,13 @@ const styles = theme => ({
     flexWrap: 'wrap',
   },
   chip: {
-    margin: theme.spacing.unit / 4,
+    height: 18,
+    margin: `0 ${theme.spacing.unit / 4}`,
   },
+
+  time: {
+    width: 200,
+  }
 });
 
 const ITEM_HEIGHT = 48;
@@ -226,6 +239,7 @@ class Filter extends React.Component {
             Departure time
           </InputLabel>
           <Select
+            className={classes.time}
             value={store.getState().filter.departureTime}
             onChange={this.handleDepartureTimeChange}
             input={
@@ -254,6 +268,7 @@ class Filter extends React.Component {
             Arraival time
           </InputLabel>
           <Select
+            className={classes.time}
             value={store.getState().filter.arrivalTime}
             onChange={this.handleArrivalTimeChange}
             input={

@@ -5,7 +5,6 @@ import NavBar from './components/Navbar';
 import FlightList from './components/FlightList';
 import { MuiPickersUtilsProvider } from 'material-ui-pickers';
 import DateFnsUtils from '@date-io/date-fns';
-
 import store from './store';
 
 class App extends Component {
@@ -25,9 +24,6 @@ class App extends Component {
   }
 
   handleSearch(flights) {
-    // console.log(flights.map(flight => {
-    //   return flight.score;
-    // }));
     this.setState({
       flights: flights
     });

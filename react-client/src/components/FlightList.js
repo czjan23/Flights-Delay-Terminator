@@ -4,21 +4,36 @@ import { withStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import FlightInfo from './FlightInfo';
 import Filter from './Filter';
-import Divider from '@material-ui/core/Divider';
 import store from '../store';
 
 const styles = theme => ({
   root: {
     position: 'relative',
-    maxWidth: 860,
+    maxWidth: 1100,
     left: '50%',
-    marginLeft: -430,
-    marginTop: 100,
+    marginLeft: -550,
+    marginTop: 20,
     paddingTop: 0,
     border: '2px groove slateblue',
     borderRadius: 10,
     zIndex: 0,
     backgroundColor: theme.palette.background.paper,
+  },
+
+  item: {
+    '&::after': {
+      position: 'absolute',
+      content: `''`,
+      display: 'block',
+      margin: '0 auto',
+      width: '100%',
+      borderBottom: '1px solid slateblue',
+      left: '0',
+    }
+  },
+
+  list: {
+    padding: 0,
   },
 
   noFlight: {
@@ -45,10 +60,6 @@ const lookUpTab = {
 };
 
 class AlignItemsList extends React.Component {
-
-  // componentDidMount() {
-  //   store.dispatch({type: 'search', loading: true});
-  // }
 
   getTime(time) {
     let parts = time.split(" ");
@@ -179,19 +190,20 @@ class AlignItemsList extends React.Component {
           {filteredFlights.length === 1 && filteredFlights[0] === 'no match' ?
           <h2 className={classes.noFlight}>No Flight Found</h2>
           :
+          <div>
+          <Filter flights={this.props.flights} />
           <div className={classes.root}>
-            <Filter flights={this.props.flights} />
-            <Divider />
-            <List>
+            <List className={classes.list}>
             {filteredFlights.map((flight, index) => {
               return (
-                <FlightInfo key={index} flight={flight} />
+                <div className={classes.item} key={index} ><FlightInfo flight={flight} /></div>
               )
             })}
             <div>
               <p className={classes.total}><b>{`${filteredFlights.length} flights in total`}</b></p>
             </div>
             </List>
+          </div>
           </div>}
       </div>
     );

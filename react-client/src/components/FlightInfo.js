@@ -9,37 +9,46 @@ import Avatar from '@material-ui/core/Avatar';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import FlightDropdown from './FlightDropdown';
+import Button from '@material-ui/core/Button';
+import Tooltip from '@material-ui/core/Tooltip';
 import Typography from '@material-ui/core/Typography';
+import Rating from 'react-rating';
 
 const styles = theme => ({
 
-  item: {
-    '&::after': {
-      position: 'absolute',
-      content: `''`,
-      display: 'block',
-      margin: '0 auto',
-      width: '100%',
-      borderBottom: '1px solid slateblue',
-      paddingTop: '53px',
-      left: '0',
-    }
-  },
-
   intro: {
-    width: 260,
+    width: '20%',
   },
 
   duration: {
-    width: 110,
+    width: '15%',
   },
 
-  rate: {
+  price: {
+    width: '10%',
+  },
+
+  stop: {
     width: 20,
   },
 
   nested: {
     paddingLeft: theme.spacing.unit * 4,
+  },
+
+  details: {
+    paddingBottom: 0,
+    paddingTop: 5,
+    width: '50%',
+  },
+
+  ratingStar: {
+    marginRight: 100,
+    color: '#3F51B5',
+    zIndex: 1,
+    '&:hover': {
+      background: 'transparent',
+    },
   },
 });
 
@@ -71,9 +80,10 @@ class FlightInfo extends React.Component {
   render() {
     const { classes } = this.props;
     const flight = this.props.flight;
+    const rating = parseFloat((flight.score / 2 ).toFixed(1));
     return (
       <div>
-        <ListItem className={classes.item} alignItems='flex-start'  button onClick={this.handleExpandClick.bind(this)}>
+        <ListItem alignItems='flex-start'  button onClick={this.handleExpandClick.bind(this)}>
           <ListItemAvatar>
             <Avatar alt="carrier-img" src={require('../carrierImgs/' + flight.carrierCode + '.png')} />
           </ListItemAvatar>
@@ -98,10 +108,14 @@ class FlightInfo extends React.Component {
               </React.Fragment>
               }
             />
-            <ListItem>
-              <ListItemText inset primary={`$${flight.totalPrice}`} />
-              <ListItemText className={classes.rate} inset primary={this.getStops(flight)} />
-              <ListItemText inset primary={`${flight.score.toFixed(1)}`} />
+            <ListItemText className={classes.price} inset primary={`$${flight.totalPrice}`} />
+            <ListItem className={classes.details}>
+              
+              <ListItemText className={classes.stop} inset primary={this.getStops(flight)} />
+              {/* <ListItemText inset primary={rating} /> */}
+              <Tooltip disableFocusListener title={`${rating} out of 5`}>
+                <Button className={classes.ratingStar}><Rating start={0} stop={5} step={1} initialRating={rating} emptySymbol="fa fa-star-o fa-sm" fullSymbol="fa fa-star fa-sm" fractions={10} readonly /></Button>
+              </Tooltip>
               
               {this.state.expanded ? <ExpandLess /> : <ExpandMore />}
             </ListItem>
