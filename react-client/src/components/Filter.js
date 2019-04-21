@@ -165,6 +165,8 @@ class Filter extends React.Component {
             <MenuItem value="Departure(Latest)">Departure(Latest)</MenuItem>
             <MenuItem value="Arrival(Earliest)">Arrival(Earliest)</MenuItem>
             <MenuItem value="Arrival(Latest)">Arrival(Latest)</MenuItem>
+            <MenuItem value="Rating(Highest)">Rating(Highest)</MenuItem>
+            <MenuItem value="Rating(Lowest)">Rating(Lowest)</MenuItem>
           </Select>
         </FormControl>
 
