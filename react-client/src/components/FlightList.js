@@ -170,6 +170,16 @@ class AlignItemsList extends React.Component {
           let timeB = this.getTime(flightB.endTime);
           return timeB - timeA;
         });
+      } else if (store.getState().filter.sortBy === "Rating(Highest)") {
+        flights = flights.sort((flightA, flightB) => {
+          return flightB.score - flightA.score;
+        });
+      } else if (store.getState().filter.sortBy === "Rating(Lowest)") {
+        flights = flights.sort((flightA, flightB) => {
+          return flightA.score - flightB.score;
+        });
+      } else {
+        flights = flights;
       }
     }
 
